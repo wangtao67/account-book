@@ -1,0 +1,174 @@
+@import url(./reset.less);
+@import url(./transition.less);
+@import url(./config.less);
+
+html {
+    width:100%;
+    height:100%;
+    -webkit-overflow-scrolling:touch;
+    overflow-scrolling:touch;
+    // -webkit-text-size-adjust: 100%;
+}
+body {
+    width:100%;
+    margin: 0 auto;
+    height:100%;
+    -webkit-font-smoothing : antialiased;
+    background: #f5f5f5;
+    color : @font-color;
+    padding:0;
+    font-family: "MicroSoft YaHei";
+    max-width: 640px;
+    font-size: 14px;
+}
+@media screen and (min-width: 321px) {
+    html {font-size: 68%;}
+}
+ 
+@media screen and (min-width: 361px) {
+    html {font-size: 74%;}
+}
+ 
+@media screen and (min-width: 401px) {
+    html {font-size: 80%;}
+}
+ 
+@media screen and (min-width: 441px) {
+    html {font-size: 86%;}
+}
+ 
+@media screen and (min-width: 481px) {
+    html {font-size: 92%;}
+}
+ 
+@media screen and (min-width: 641px) {
+    html {font-size: 98%;}
+}
+
+.flex {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+}
+.flex-column {
+    display: flex;
+    flex-direction:column;
+}
+.flex-justify {
+    justify-content:center ;
+    -webkit-justify-content:center ;
+}
+.flex-middle {
+    align-items: center;
+    -webkit-align-items: center;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-1  {
+    flex-grow: 1;
+}
+.flex-2  {
+    flex-grow: 2;
+}
+.flex-3  {
+    flex-grow: 3;
+}
+/** 可解决同级元素设 flex-grow 时被挤压变形的问题 */
+.flex-shrink0 {
+    flex-shrink: 0;
+};
+.inl-blk {
+    display: inline-block;
+}
+.flex-wrap{
+    flex-wrap: wrap; 
+}
+/** 浮动 */
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+.clear:after{
+    content:"";
+    display: block;
+    clear:both;
+}
+
+/** 边框类 */
+.border-t-b {
+    border-bottom: @primary-border;
+    border-top: @primary-border;
+}
+.border-bottom{
+    border-bottom: @primary-border;
+}
+.border-right{
+    border-right: @primary-border;
+}
+.border-left{
+    border-left: @primary-border;
+}
+.border-top {
+    border-top: @primary-border;
+}
+
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+/** 文字相关类 */
+.long-text {
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+.font-gray{
+    color: #939393 !important;
+}
+.font-gray-more{
+    color: #d1d1d1 !important;
+}
+.font-green {
+    color: #08c2b5;
+}
+.font-orange{
+    color: @orange-color;
+}
+.font-red{
+    color: @red-color;
+}
+.font-white {
+    color: #fff !important;
+}
+/** 背景色 */
+.bg-white {
+    background-color: #fff;
+}
+.bg-green{
+    background-color: @green-color !important;
+}
+/** 定义 按钮/tab active 状态  绿色和白色按钮 */
+.green-btn:active {
+    background-color: #07a89e!important;
+}
+.white-btn:active {
+    background-color: #d1d1d1!important;
+}
+.white-tab:active {
+    background-color: #d1d1d1!important;
+}
+
+::-webkit-input-placeholder { color:#d1d1d1; }
+::-moz-placeholder { color:#d1d1d1; } /* firefox 19+ */
+:-ms-input-placeholder { color:#d1d1d1; } /* ie */
+input:-moz-placeholder { color:#d1d1d1; }
+input,textarea,select{
+    font: 14px Arial; 
+}
