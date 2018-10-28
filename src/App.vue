@@ -4,26 +4,37 @@
     <router-view></router-view>
 
     <tabbar></tabbar>
-     
+
+    <record-new :showAdd="showAdd"></record-new>
+    
   </div>
 </template>
 
 <script>
   import tabbar from './components/tabbar/index';
+  import recordNew from './components/recordNew/index';
+  import { mapState } from 'vuex'
+
   export default {
     data() {
       return {
       	item: {
       		id: 1,
           name: 'vue'
-        }
+        },
       }
     },
     mounted() {
       
     },
     components: {
-      tabbar
+      tabbar,
+      recordNew
+    },
+    computed:{
+      ...mapState({
+        showAdd: state => state.showAdd
+      }),
     },
     methods: {
       

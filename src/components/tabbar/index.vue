@@ -14,7 +14,7 @@
         </div>
         <div class="tab-name">报表</div>
       </li>
-      <li class="tab-item flex-1 add-item">
+      <li class="tab-item flex-1 add-item" @click="_showAddFn">
         <div class="icon-wrap">
           <div class="tab-add">+</div>
         </div>
@@ -37,6 +37,7 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 export default {
   props: {
        
@@ -47,11 +48,18 @@ export default {
      
     };
   },
-
+  
   methods: {
     goRouter (name) {
       this.$router.push({ name });
-    }
+    },
+    _showAddFn () {
+      console.log(222);
+      this.showAddFn(true);
+    },
+    ...mapActions({
+      showAddFn: 'showAddFn' 
+    }),
   } 
 };
 

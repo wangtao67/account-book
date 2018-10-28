@@ -7,22 +7,15 @@ Vue.use(Vuex)
 
 // 应用初始状态
 const state = {
-    homeListScrollY: 0,  // 主页列表滚动位置
-    searchListScrollY: 0, // 搜索列表滚动位置
-    orderListScrollY: 0  // 订单列表滚动位置
-
+    showAdd: false,  
 }
 
 // 定义所需的 mutations
 const mutations = {
-    SETHOMEPOSITION(state,value) {
-        state.homeListScrollY = value
-    },
-    SETSEARCHPOSITION(state,value) {
-        state.searchListScrollY = value
-    },
-    SETORDERLISTPOSITION(state,value) {
-        state.orderListScrollY = value
+    SHOWADDFN(state, value) {
+        console.log('value', value)
+        state.showAdd = value
+        console.log(state.showAdd)
     },
 }
 
