@@ -17,7 +17,10 @@
     "vue-resource": "^1.0.3",
     "vue-router": "^2.1.1",
     "vuex": "^2.4.0",
-    "weui-distpicker": "^0.1.1"
+    "weui-distpicker": "^0.1.1",
+    "mongoose": "^5.0.10",
+    "express": "^4.14.0",
+    "body-parser": "^1.18.2"
   },
   "devDependencies": {
     "autoprefixer": "^6.5.4",
@@ -33,7 +36,6 @@
     "cross-spawn": "^5.0.1",
     "css-loader": "^0.26.1",
     "eventsource-polyfill": "^0.9.6",
-    "express": "^4.14.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
     "function-bind": "^1.1.0",

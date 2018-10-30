@@ -95,10 +95,13 @@
       chooseMonth () {
         this.showMonthMd = true;
       },
-      monthChange () {
-
+      monthChange (picker, value) {
+        this.nowMonth = Number(value[1]);
+        console.log(value);
       },
-      chooseMonthFn () {},
+      chooseMonthFn (month) {
+        this.showMonthMd = false;
+      },
     }
   }
 </script>
