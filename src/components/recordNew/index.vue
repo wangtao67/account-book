@@ -41,7 +41,8 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
+import { mapActions } from 'vuex';
+import { getTypeList } from '../../service/http';
 export default {
   props: {
     showAdd: {
@@ -95,7 +96,11 @@ export default {
       payType: 2,
     };
   },
-
+  created () {
+    getTypeList().then((data) => {
+      console.log(data);
+    });
+  },
   methods: {
     ...mapActions({
       showAddFn: 'showAddFn' 

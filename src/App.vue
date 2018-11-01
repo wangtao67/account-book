@@ -25,6 +25,11 @@
       }
     },
     mounted() {
+      http.post('http://localhost:3000/api/addexpCostType',
+        {
+          name : '服饰',
+          type: 1
+        })
       
     },
     components: {
