@@ -10,9 +10,9 @@ const bodyParser = require("body-parser")
 //这一句是连接上数据库
  var db = mongoose.connect('mongodb://localhost:27017/accountBook', function (err) {
     if (err) {
-      console.log('连接失败');
+      console.log('连接数据库失败');
     } else{
-      console.log('连接成功');
+      console.log('连接数据库成功');
     }
  });
 
@@ -22,7 +22,7 @@ const bodyParser = require("body-parser")
 
 const app = express()
 
-//设置跨域访问
+// 设置跨域访问
 app.all('*', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');

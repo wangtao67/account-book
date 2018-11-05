@@ -17,11 +17,10 @@
           </div>
         </div>
       </header>
-      
       <div class="tab-content">
         <div v-show="payType === 1" class="cost-wrap">
           <ul class="type-list flex">
-            <li v-for="item in costTypes" class="type-item">
+            <li v-for="item in incomeTypes" class="type-item" @click="selectType(item)">
               <div class="add-img">{{item.name.substring(0, 1)}}</div>
               <div class="type-name">{{item.name}}</div>
             </li>
@@ -29,7 +28,7 @@
         </div>
         <div v-show="payType === 2" class="income-wrap">
           <ul class="type-list flex">
-            <li v-for="item in incomeTypes" class="type-item">
+            <li v-for="item in costTypes" class="type-item" @click="selectType(item)">
               <div class="add-img">{{item.name.substring(0, 1)}}</div>
               <div class="type-name">{{item.name}}</div>
             </li>
@@ -37,9 +36,31 @@
         </div>
       </div>
     </div>
+   <!--  <mt-popup
+    v-model="showFormMd"
+    position="bottom"
+    class="form-modal">
+      <div>
+        <mt-field label="金额" placeholder="请输入数字" type="number" v-model="form.amount"></mt-field>
+        <mt-field label="日期" placeholder="请输入生日" type="date" v-model="form.date"></mt-field>
+        <mt-field label="备注" placeholder="备注" type="textarea" rows="4" v-modal="form.memo"></mt-field>
+      </div>
+      
+    </mt-popup> -->
+<!--     <mt-popup
+    v-model="showDateMd"
+    position="bottom"
+    class="date-modal"> -->
+      <mt-datetime-picker
+        v-model="showDateMd"
+        type="date"
+        year-format="{value} 年"
+        month-format="{value} 月"
+        date-format="{value} 日">
+      </mt-datetime-picker>
+    <!-- </mt-popup> -->
   </mt-popup> 
 </template>
-
 <script>
 import { mapActions } from 'vuex';
 import { getTypeList } from '../../service/http';
@@ -53,52 +74,24 @@ export default {
 
   data() {
     return {
-      costTypes: [
-        {
-          name:'转',
-          icon: ''
-        },
-        {
-          name:'转',
-          icon: ''
-        },
-        {
-          name:'转',
-          icon: ''
-        },
-        {
-          name:'转',
-          icon: ''
-        },
-      ],
-      incomeTypes: [
-        {
-          name:'理财',
-          id: ''
-        },
-        {
-          name:'理财',
-          id: ''
-        },
-        {
-          name:'理财',
-          id: ''
-        },
-        {
-          name:'理财',
-          id: ''
-        },
-        {
-          name:'理财',
-          id: ''
-        },
-      ],
+      costTypes: [],
+      incomeTypes: [],
       payType: 2,
+      showFormMd: false,
+      showDateMd: false,
+      form: {
+        amount: 0,
+        date: '',
+        memo: ''
+      }
     };
   },
   created () {
-    getTypeList().then((data) => {
+    getTypeList().then(({data}) => {
       console.log(data);
+      var typeList = data;
+      this.costTypes = typeList.filter(item => item.type === 1);
+      this.incomeTypes = typeList.filter(item => item.type === 2);
     });
   },
   methods: {
@@ -107,6 +100,10 @@ export default {
     }),
     checkTab (type) {
       this.payType = type;
+    },
+    selectType (item) {
+      console.log(item);
+      this.showFormMd = true;
     }
   } 
 };
@@ -183,6 +180,9 @@ export default {
 
       }
     } 
+    .form-modal {
+      width: 100%;
+    }
   }
   
 </style>
