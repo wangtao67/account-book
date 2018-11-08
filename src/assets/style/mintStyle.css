@@ -1558,7 +1558,7 @@ display: inline-block;
     color: #fff;
     box-sizing: border-box;
     text-align: center;
-    z-index: 1000;
+    z-index: 10000;
     -webkit-transition: opacity .3s linear;
     transition: opacity .3s linear
 }

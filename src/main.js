@@ -36,6 +36,12 @@ Object.keys(directives).forEach(key => {
   Vue.directive(key, directives[key]);
 });
 
+// 全局组件
+import components from './components';
+Object.keys(components).forEach(key => {
+  Vue.component(key, components[key]);
+});
+
 const router = new VueRouter({
   routes: routes,
   // mode: 'history',

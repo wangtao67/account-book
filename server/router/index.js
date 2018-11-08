@@ -23,6 +23,32 @@ router.get("/recordList", (req, res) => {
     });
 });
 
+/**
+ * 新增消费类型
+ * @param  {number} date 
+ * @param  {number} amount 
+ * @param  {string} type
+ * @param  {string} memo 
+ */
+router.post("/addRecord", (req, res) => {
+  var params = req.body;
+  Model.Records.create(params, (err, data) => {
+    if (err) {
+      res.json({
+        state: 0,
+        err: err
+      });
+    } else {
+      res.json({
+        state: 1,
+        msg: '添加记录成功！',
+        data: data
+      });
+    }
+  });
+});
+
+
 // 通过ObjectId查询单个英雄信息路由
 router.get("/hero/:id", (req, res) => {
   Model.Records.findById(req.params.id)
@@ -95,30 +121,46 @@ router.delete("/hero/:id", (req, res) => {
     .catch(err => res.json(err));
 });
 
+
+
 // 查询消费类型
 router.get("/expCostTypes", (req, res) => {
   console.log('请求/recordList');
   Model.ExpenseCostTypes.find({})
     .then(data => {
-      console.log('查询消费收入类型');
-      console.log(data);
-      res.json(data);
+      res.json({
+        state: 1,
+        msg: '查询消费类型成功',
+        data: data
+      });
     })
     .catch(err => {
-      console.log('err');
-      res.json(err);
+      res.json({
+        state: 0,
+        msg: '查询失败',
+        err: err
+      });
     });
 });
 
-
+/**
+ * 新增消费类型
+ * @param  {number} type 类型：1-收入，2-支出
+ * @param  {string} name 名称
+ */
 router.post("/addexpCostType", (req, res) => {
   Model.ExpenseCostTypes.create(req.body, (err, data) => {
     if (err) {
-      res.json(err);
+      res.json({
+        state: 0,
+        err: err
+      });
     } else {
-      console.log('添加成功！');
-      console.log(data);
-      res.json(data);
+      res.json({
+        state: 1,
+        msg: '添加成功！',
+        data: data
+      });
     }
   });
 });

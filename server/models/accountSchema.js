@@ -4,7 +4,9 @@ const mongoose = require('mongoose')
 const recordsSchema = mongoose.Schema({
   date :String,
   amount : Number,
-  type : String
+  useTypeId: String,
+  type : String,
+  memo: String
 }, { collection: 'record' })
 
 // 支出/收入类型

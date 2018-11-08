@@ -54,12 +54,8 @@ export default {
       this.$router.push({ name });
     },
     _showAddFn () {
-      console.log(222);
-      this.showAddFn(true);
+      this.$router.push({name: 'addRecord'});
     },
-    ...mapActions({
-      showAddFn: 'showAddFn' 
-    }),
   } 
 };
 

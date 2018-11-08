@@ -1,18 +1,11 @@
 <template>
   <div id="app">
-    
     <router-view></router-view>
-
     <tabbar></tabbar>
-
-    <record-new :showAdd="showAdd"></record-new>
-    
   </div>
 </template>
 
 <script>
-  import tabbar from './components/tabbar/index';
-  import recordNew from './components/recordNew/index';
   import { mapState } from 'vuex'
 
   export default {
@@ -25,16 +18,11 @@
       }
     },
     mounted() {
-      // http.post('http://localhost:3000/api/addexpCostType',
-      //   {
-      //     name : '退款',
-      //     type: 2
-      //   })
+
       
     },
     components: {
-      tabbar,
-      recordNew
+
     },
     computed:{
       ...mapState({

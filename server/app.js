@@ -18,8 +18,6 @@ const bodyParser = require("body-parser")
 
 //这里的myDbs是数据库的名字，不是表的名字
 
-
-
 const app = express()
 
 // 设置跨域访问

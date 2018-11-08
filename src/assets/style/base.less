@@ -45,6 +45,7 @@ body {
     html {font-size: 98%;}
 }
 
+// 布局类
 .flex {
   display: -webkit-flex; /* Safari */
   display: flex;
@@ -123,6 +124,7 @@ body {
 .text-right {
     text-align: right;
 }
+
 /** 文字相关类 */
 .long-text {
     overflow: hidden;
@@ -164,6 +166,27 @@ body {
 .white-tab:active {
     background-color: #d1d1d1!important;
 }
+
+/** 表单 */
+.cus-form {
+    .form-row {
+        padding: .08rem 0;
+        display: flex;
+        align-items: center;
+        label {
+
+        }
+        .input-wrap {
+            flex: 1;
+            margin-left: .1rem;
+            input {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
 
 ::-webkit-input-placeholder { color:#d1d1d1; }
 ::-moz-placeholder { color:#d1d1d1; } /* firefox 19+ */

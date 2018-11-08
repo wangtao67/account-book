@@ -37,5 +37,13 @@ export const routes = [
     },
     component: resolve => require(['../pages/mine/index'], resolve)     
   },
+  {
+    path:'/add_record', 
+    name: 'addRecord',
+    meta: { 
+      title: "记账本" ,
+    },
+    component: resolve => require(['../pages/recordNew/index'], resolve)     
+  },
 
 ]
