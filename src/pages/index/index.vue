@@ -18,25 +18,21 @@
         <div class="it-val">{{ 300 }}</div>
       </div>
     </div>
-
     <div class="record">
       <ul class="day-record-list">
-        <li class="day-record-item">
+        <li class="day-record-item" v-for="item in recordList">
           <div class="it-header">
-            <span class="date">{{ '19日 星期日' }}</span>
-            <span class="total-cost fr">支出：{{ '609' }}</span>
+            <span class="date">{{item.date}}</span>
+            <span class="total-cost fr">支出：{{item.total}}</span>
           </div>
           <ul class="record-list">
-            <li class="record-item">
-              <span class="categray">【零食】</span>
-              <span class="content">鸡排</span>
-              <span class="cost fr">{{ '-24.00' }}</span>
+            <li class="record-item" v-for="recItem in item.records">
+              <span class="categray">【{{recItem.useTypeName}}】</span>
+              <span class="content">{{recItem.memo}}</span>
+              <span class="cost fr">{{recItem.amount}}</span>
             </li>
           </ul>
         </li>
-        <!-- <li v-for="item in recordList">
-          
-        </li> -->
       </ul>
     </div>
     <mt-popup
@@ -53,6 +49,7 @@
 </template>
 
 <script>
+  import { getRecordList, getMonthAccount } from '@service/http';
   export default {
     data() {
       return {
@@ -83,15 +80,30 @@
             className: 'slot4',
             textAlign: 'left'
           }, 
-        ]
+        ],
+        recordList: []
       }
     },
-    mounted() {
-      
+    created() {
+      this.getRecord();
     },
     components: {
     },
     methods: {
+      getRecord () {
+        let me = this;
+        getRecordList({
+          uid: Storages.cookie.get('uid')
+        }).then(({data}) => {
+          if (data.state === 1) {
+            console.log(data);
+            me.recordList = data.list;
+
+          } else  {
+            me.$toast(data.msg);
+          }
+        });   
+      },
       chooseMonth () {
         this.showMonthMd = true;
       },
@@ -111,7 +123,6 @@
     .header {
       text-align: center;
       padding: .08rem 0;
-
       .it-name {
         color: #a89b9b;
         font-size: .12rem;

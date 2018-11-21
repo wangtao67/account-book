@@ -4,7 +4,7 @@
     <div class="record-wrap">
       <header class="header">
         <div>
-          <span class="back" @click="showAddFn(false)"><</span>
+          <span class="back" @click="$router.go(-1)"><</span>
           <div class="title">记一笔</div>  
         </div>
         <div class="tab-wrap">
@@ -39,6 +39,12 @@
     <mDialog class="add-record" :visible="showAddRecordMd" title="新增" @hideFn="showAddRecordMd = false" @comfirmFn="addRecordFn">
       <div slot="body">
         <div class="cus-form">
+          <div class="form-row">
+            <label>类型</label>
+            <div class="input-wrap">
+              <div class="addtype-name">{{addRecord.useTypeName}}</div>
+            </div>  
+          </div>
           <div class="form-row">
             <label>日期</label>
             <div class="input-wrap">
@@ -89,7 +95,6 @@ export default {
       default: false
     } 
   },
-
   data() {
     return {
       costTypes: [],
@@ -102,6 +107,7 @@ export default {
         amount: '',
         date: '',
         useTypeId: '',
+        useTypeName: '',
         memo: ''
       },
       typeName: '',
@@ -117,7 +123,7 @@ export default {
     }),
     getTypeList () {
       getTypeList().then(({data}) => {
-        var typeList = data.data;
+        var typeList = data.list;
         this.costTypes = typeList.filter(item => item.type === 2);
         this.incomeTypes = typeList.filter(item => item.type === 1);
       });
@@ -127,7 +133,7 @@ export default {
     },
     selectType (item) {
       this.addRecord.useTypeId = item._id;
-      console.log(item._id);
+      this.addRecord.useTypeName = item.name;
       this.showAddRecordMd = true;
     },
     addTypeFn () {
@@ -163,6 +169,7 @@ export default {
         amount: addRecord.amount,
         memo: addRecord.memo,
         useTypeId: addRecord.useTypeId,
+        useTypeName: addRecord.useTypeName,
         type: this.payType
       }).then(res => {
         this.showAddRecordMd = false;
@@ -277,6 +284,11 @@ export default {
     .add-record {
       .input-wrap {
         width: 1.4rem;
+      }
+      .addtype-name {
+        text-align: left;
+        font-size: .14rem;
+        color: #2adace;
       }
     }
   }

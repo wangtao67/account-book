@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <router-view></router-view>
-    <tabbar></tabbar>
+    <router-view :key="activeDate"></router-view>
+    <tabbar v-show="showTabbar"></tabbar>
   </div>
 </template>
 
@@ -11,18 +11,20 @@
   export default {
     data() {
       return {
-      	item: {
-      		id: 1,
-          name: 'vue'
-        },
+        activeDate: '', // 解决跳转相同组件页面不刷新
+      	showTabbar: false,
+        showTabMenus: ['index', 'explore', 'graph', 'mine']
       }
     },
-    mounted() {
+    created() {
 
-      
+        
     },
-    components: {
-
+    watch: {
+      '$route' (to, from) {
+        this.showTabbar = this.showTabMenus.includes(to.name) ? true : false;
+        this.activeDate = new Date() + '';
+      }
     },
     computed:{
       ...mapState({
