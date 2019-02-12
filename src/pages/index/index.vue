@@ -20,7 +20,7 @@
     </div>
     <div class="record">
       <ul class="day-record-list">
-        <li class="day-record-item" v-for="item in recordList">
+        <li class="day-record-item" v-for="item in recordList" :key="item.id">
           <div class="it-header">
             <span class="date">{{item.date}}</span>
             <span class="total-cost fr">支出：{{item.total}}</span>
@@ -29,7 +29,7 @@
             <li class="record-item" v-for="recItem in item.records">
               <span class="categray">【{{recItem.useTypeName}}】</span>
               <span class="content">{{recItem.memo}}</span>
-              <span class="cost fr">{{recItem.amount}}</span>
+              <span class="cost fr" :class="{'green-color': recItem.type === 1 }">{{recItem.type === 2 ? ('-' + recItem.amount) : recItem.amount}}</span>
             </li>
           </ul>
         </li>
@@ -146,6 +146,7 @@
       }
     }
     .record {
+      padding-bottom: .8rem;
       .day-record-list {
 
       }
@@ -158,6 +159,12 @@
         background-color: #fff;
         .content {
           margin-left: .25rem;
+        }
+        .cost {
+          color: #e6cc68;
+          &.green-color {
+            color: #31cf31;
+          }
         }
       }
     }

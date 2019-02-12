@@ -71,6 +71,7 @@
       v-model="recordDate"
       type="date"
       @confirm="dateChange"
+      :endDate="new Date()"
       year-format="{value} 年"
       month-format="{value} 月"
       date-format="{value} 日">
@@ -111,7 +112,7 @@ export default {
         memo: ''
       },
       typeName: '',
-      recordDate: ''
+      recordDate: new Date()
     };
   },
   created () {
@@ -136,6 +137,9 @@ export default {
       this.addRecord.useTypeName = item.name;
       this.showAddRecordMd = true;
     },
+    /**
+     * 添加类型
+     */
     addTypeFn () {
       let typeName = this.typeName;
       let type = this.payType;
@@ -155,6 +159,9 @@ export default {
         this.getTypeList();
       });
     },
+    /**
+     * 添加消费
+     */
     addRecordFn () {
       var addRecord = this.addRecord;
       if (!addRecord.date || !addRecord.amount) {
@@ -172,14 +179,20 @@ export default {
         useTypeName: addRecord.useTypeName,
         type: this.payType
       }).then(res => {
-        this.showAddRecordMd = false;
-        this.$toast('添加成功');
+        console.log(res);
+        if (res.body.state === 1) {
+          this.showAddRecordMd = false;
+          this.$toast('添加成功');
+        } else {
+          this.$toast(res.body.msg);
+        }
       });
     },
     openDate () {
       this.$refs['datePicker'].open();
     },
     dateChange (value) {
+      console.log(value);
       this.addRecord.date = this.Util.formatDate(value);
     }
     

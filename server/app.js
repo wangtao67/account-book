@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const md5 = require('md5-node');
 const session = require("express-session");
+var cookieParser = require('cookie-parser');
 
 const app = express();
 
@@ -16,13 +17,14 @@ var db = mongoose.connect('mongodb://localhost:27017/accountBook', function (err
     }
 });
 
+app.use(cookieParser());
 // 配置中间件  
 app.use(session({
     secret: 'keyboard cat',
     resave: false,
     saveUninitialized: true,
     cookie: {
-        maxAge: 1000 * 60 * 0.5
+        maxAge: 1000 * 60 * 5000
     },
     rolling: true
 }));

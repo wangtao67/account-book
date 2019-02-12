@@ -67,6 +67,7 @@ export default {
     bottom: 0;
     width: 100%;
     border-top: 1px solid #c3c3c3;
+    background-color: #fff;
     .tab-item {
       text-align: center;
       font-size: .12rem;

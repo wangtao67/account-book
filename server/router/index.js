@@ -9,6 +9,7 @@ const Model = require("../models");
 // 查询所有记录
 router.post("/recordList", (req, res) => {
   var uid = req.body.uid;
+  console.log(req.session);
   console.log('/recordList');
   console.log('uid', uid);
   if (!uid) {
@@ -78,9 +79,8 @@ router.post("/userMonthAccount", (req, res) => {
   });
 });
 
-
 /**
- * 新增消费类型
+ * 新增消费记录
  * @param  {string} id 
  * @param  {number} date 
  * @param  {number} amount 
@@ -89,6 +89,15 @@ router.post("/userMonthAccount", (req, res) => {
  */
 router.post("/addRecord", (req, res) => {
   var params = req.body;
+  if (!params.uid) {
+    res.json({
+      state: 2,
+      msg: '缺少uid',
+    });
+  } else if (!params.date || !params.amount || !params.memo || !params.useTypeId || !params.useTypeName || !params.type) {
+    res.json({ state: 3, msg: '缺少字段', data: params });
+    return;
+  } 
   Model.Records.create(params, (err, data) => {
     if (err) {
       res.json({
@@ -96,29 +105,7 @@ router.post("/addRecord", (req, res) => {
         err: err
       });
     } else {
-      // Model.userMonthAccount.findOne({ uid, month }, (err, doc) => {
-      //   if (err) {
-      //     res.json({ state: 0, err: err });
-      //   } else {
-      //     Model.userMonthAccount.update(
-      //       { uid, month }, 
-      //       { }, (err, doc) => {
-      //       if (err) {
-      //         res.json({
-      //           state: 0,
-      //           err: err
-      //         });
-      //       } else {
-      //         res.json({ state: 1, msg: '添加记录成功！', data: data });
-      //       }
-      //     });
-
-      //     res.json({ state: 1, msg: '添加记录成功！', data: data });
-      //   }
-      // });
-      // var dataArr = req.body.date.split('-');
-      // var month = dataArr[0] + '-' + dataArr[1];
-    
+      res.json({ state: 1, msg: '添加记录成功！', data: data });
     }
   });
 });
@@ -209,7 +196,7 @@ router.post("/login", (req, res) => {
       if (data.length > 0) {
         if (data[0].password === password) {
           req.session.token = username + '_' + redomToken();;
-          console.log('登录token: ', req.session.token);
+          console.log('登录token: ', req.session);
           res.json({
             state: 1,
             msg: '登录成功！',
