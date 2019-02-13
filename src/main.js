@@ -12,6 +12,7 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'  // 轮播插件
 import MintUI from 'mint-ui'
 import '@assets/style/mintStyle.css'
 require('swiper/dist/css/swiper.css')
+import Storages from "@assets/js/storages";
 
 Vue.config.debug = true;
 
@@ -22,7 +23,6 @@ Vue.use(MintUI)
 //将http作为全局变量保存 
 window.http = Vue.http 
 
-import Storages from "@assets/js/storages";
 window.Storages = Storages;
 
 // 全局工具函数 页面通过 this.Util.函数名 使用
@@ -43,7 +43,6 @@ import components from './components';
 Object.keys(components).forEach(key => {
   Vue.component(key, components[key]);
 });
-
 
 const app = new Vue({
   router,

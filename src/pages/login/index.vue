@@ -62,10 +62,14 @@
           }
         });
       },
+      /**
+       * 点击登录
+       */
       login () {
         var me = this;
         var username = me.form.username;
         var password = me.form.password;
+        console.log(1111111111111);
         if (!username) {
           me.$toast('请输入账号');
         } else if (!password) {

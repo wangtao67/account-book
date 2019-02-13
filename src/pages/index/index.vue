@@ -2,8 +2,8 @@
   <div class="index-page">
     <div class="header flex bg-white">
       <div class="month-wrap flex-1">
-        <div class="year">2018</div>
-        <div class="month" @click="chooseMonth">{{nowMonth}}月 <span class="down-arrow"></span></div>        
+        <div class="year">{{ slectMonth.year }}</div>
+        <div class="month" @click="chooseMonth">{{ slectMonth.month }}月 <span class="down-arrow"></span></div>        
       </div>
       <div class="income h-item flex-1">
         <div class="it-name">收入(元)</div>
@@ -19,14 +19,15 @@
       </div>
     </div>
     <div class="record">
-      <ul class="day-record-list">
+      <p v-if="!recordList.length" class="no-list">暂无记录</p>
+      <ul v-else class="day-record-list">
         <li class="day-record-item" v-for="item in recordList" :key="item.id">
           <div class="it-header">
             <span class="date">{{item.date}}</span>
-            <span class="total-cost fr">支出：{{item.total}}</span>
+            <span class="total-cost fr">支出：{{item.totalCost}}&nbsp;&nbsp;&nbsp;收入：{{item.totalIncome}}</span>
           </div>
           <ul class="record-list">
-            <li class="record-item" v-for="recItem in item.records">
+            <li class="record-item" v-for="recItem in item.records" :key="recItem.id">
               <span class="categray">【{{recItem.useTypeName}}】</span>
               <span class="content">{{recItem.memo}}</span>
               <span class="cost fr" :class="{'green-color': recItem.type === 1 }">{{recItem.type === 2 ? ('-' + recItem.amount) : recItem.amount}}</span>
@@ -43,7 +44,7 @@
           <div class="flex-1" @click="showMonthMd = false">取消</div>
           <div class="sure-btn" @click="chooseMonthFn">确定</div>
         </div>
-        <mt-picker :slots="slots" @change="monthChange"></mt-picker>
+        <mt-picker :slots="monthSlots" @change="monthChange"></mt-picker>
     </mt-popup>
   </div>
 </template>
@@ -53,14 +54,15 @@
   export default {
     data() {
       return {
-        nowMonth: 10,
+        modalMonth: {},
+        slectMonth: {},
         showMonthMd: false,
-        slots: [
+        monthSlots: [
           {
             flex: 1,
-            values: ['2014', '2015', '2016', '2017', '2018'],
+            values: ['2017', '2018'],
             className: 'slot1',
-            textAlign: 'right'
+            textAlign: 'right',
           }, {
             flex: 1,
             divider: true,
@@ -69,7 +71,7 @@
             textAlign: 'center'
           }, {
             flex: 1,
-            values: ['01', '02', '03', '04', '05', '06','07', '08'],
+            values: ['01', '02', '03', '04', '05', '06','07', '08', '09', '10', '11', '12'],
             className: 'slot3',
             textAlign: 'left'
           },
@@ -85,35 +87,74 @@
       }
     },
     created() {
+      this.makeMonthSlots();
       this.getRecord();
     },
     components: {
     },
     methods: {
+      /**
+       * 获取记录数据
+       */
       getRecord () {
         let me = this;
+        let searchMonth = me.formatMonth(me.slectMonth);
         getRecordList({
-          uid: Storages.cookie.get('uid')
+          uid: Storages.cookie.get('uid'),
+          searchMonth: searchMonth
         }).then(({data}) => {
           if (data.state === 1) {
             console.log(data);
             me.recordList = data.list;
-
           } else  {
             me.$toast(data.msg);
           }
         });   
       },
+      /**
+       * 生成年月数据
+       */
+      makeMonthSlots () {
+        let dateObj = new Date();
+        let nowYear = dateObj.getFullYear(),
+          nowMonth = dateObj.getMonth() + 1;
+        let yearArr = [];
+        for (let i = nowYear; i >= nowYear - 2; i--) {
+          yearArr.push(String(i));
+        }
+        yearArr.reverse(); 
+        this.monthSlots[0].values = yearArr;
+        this.monthSlots[0].defaultIndex = yearArr.length - 1;
+        this.monthSlots[2].defaultIndex = nowMonth - 1;
+        
+        this.slectMonth.year =  nowYear;
+        this.slectMonth.month = nowMonth;
+      },   
       chooseMonth () {
         this.showMonthMd = true;
       },
       monthChange (picker, value) {
-        this.nowMonth = Number(value[1]);
+        this.modalMonth.year = value[0];
+        this.modalMonth.month = value[1];
         console.log(value);
       },
-      chooseMonthFn (month) {
+      chooseMonthFn () {
         this.showMonthMd = false;
+        this.slectMonth = this.modalMonth;
+        this.getRecord();
       },
+      /**
+       * 将年月格式化为标准6位年月
+       */
+      formatMonth (slectMonth) {
+        let year = slectMonth.year;        
+        let month = slectMonth.month;
+        month = Number(month);
+        if (month < 10) {
+          month = '0' + month;
+        }
+        return year + '-' + month + '';
+      }
     }
   }
 </script>
@@ -147,6 +188,11 @@
     }
     .record {
       padding-bottom: .8rem;
+      .no-list {
+        margin-top: .6rem;
+        text-align: center;
+        color: #888;
+      }
       .day-record-list {
 
       }

@@ -15,10 +15,16 @@ var schemaObj = {
 	// 月账户统计表
 	UserMonthAccount: Schema({
 		uid: String, // 用户id
-	  month: String,    // 2018-1
-	  income : Number,  // 收入
-	  expenses: Number, // 支出
-	  balance : Number, // 结余
+		username: String, 
+	  monthRecord: [{
+			month: String,
+			cost: Number,
+			income: Number,
+			balance: Number
+		}],    // 
+	  totalIncome : Number,  // 收入
+	  totalExpenses: Number, // 支出
+	  totalBalance : Number, // 结余
 	}, { collection: 'userMonthAccount' }),
 
 	// 记录列表
