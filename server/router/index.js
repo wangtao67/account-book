@@ -6,6 +6,15 @@ const router = express.Router();
 //引入数据模型模块
 const Model = require("../models");
 
+var mongoose = require('mongoose'); 
+
+const handError = function (err, res) {
+  res.json({
+    state: 0,
+    err: err
+  });
+}
+
 // 查询所有记录
 router.post("/recordList", (req, res) => {
   var uid = req.body.uid;
@@ -73,25 +82,48 @@ router.post("/recordList", (req, res) => {
 // 查询用户月消费金额
 router.post("/userMonthAccount", (req, res) => {
   var uid = req.body.uid;
+  var month = req.body.month;
+
   console.log('/userMonthAccount');
   console.log('uid', uid);
+
   if (!uid) {
     res.json({
       state: 2,
       msg: '缺少uid',
     });
+    return;
   }
-  Model.UserMonthAccount.findOne({ uid }, (err, doc) => {
+
+  var dateReg =new RegExp(month); 
+  // 根据date查询该月份数据，并按日期排序
+  Model.Records.find({ uid, 'date': dateReg }).exec(function(err, doc){
     if (err) {
       res.json({
         state: 0,
         err: err
       });
     } else {
+      console.log('doc: =====================');
+      console.log(doc);
+
+      var userCost = 0, userIncome = 0, userBalance = 0;
+      doc.forEach(item => {
+        if (item.type === 1) {
+          userIncome += item.amount;
+        } else {
+          userCost += item.amount;
+        }
+      });
+      userBalance = userIncome - userCost;
       res.json({
         state: 1,
         msg: '查询成功！',
-        list: doc
+        data: {
+          userIncome,
+          userCost,
+          userBalance,
+        }
       });
     }
   });
@@ -117,80 +149,41 @@ router.post("/addRecord", (req, res) => {
     return;
   } 
 
-  var monthRecordFn = function () {
-    
-
-    var addMonthRecord = function () {
-      var cost = 0, income = 0, total = 0;
-      if (params.type === 1) {
-        income += params.amount;
-      } else {
-        cost += params.amount;
-      }
-      total
-      var monthCollectionPara = {
-        uid: params.uid,
-        month: params.date,
-        cost: cost,
-        income: income,
-        
-  
-      };
-      Model.UserMonthAccount.create(params, (err, data) => {
-        if (err) {
-          res.json({
-            state: 0,
-            err: err
-          });
-        } else {
-          
-          
-        }
-      });
-    }
-
-    var updateMonthRecord = function () {
-
-    }
-
-    Model.userMonthAccount.findOne({ uid }, (err, doc) => {
-      if (err) {
-        res.json({
-          state: 0,
-          err: err
-        });
-      } else {
-        if (doc.length > 0) {
-
-        } else {
-          addMonthRecord();
-        }
-        res.json({
-          state: 1,
-          msg: '查询成功！',
-          list: doc
-        });
-      }
-    });
-
-
-
-    
-  }
-
-  Model.Records.create(params, (err, data) => {
+  var recordObj = {
+    uid: params.uid, // 用户id
+		date: params.date, // 格式：2018-02-23
+	  amount: params.amount,
+	  useTypeId: params.useTypeId, // 消费（收入）类型id
+	  useTypeName: params.useTypeName, // 消费（收入）类型
+	  type : params.type, // 消费or收入 1/2
+	  memo: params.memo
+  };
+  // 生成明细记录
+  Model.Records.create(recordObj, (err, data) => {
     if (err) {
-      res.json({
-        state: 0,
-        err: err
-      });
+      handError(err);
     } else {
-
-      res.json({ state: 1, msg: '添加记录成功！', data: data });
+      console.log('记录明细成功！');
+      var signedAmount, income = 0, cost = 0;
+      if (params.type === 1) {
+        income = params.amount;
+        signedAmount = params.amount;
+      } else {
+        cost = params.amount;
+        signedAmount = -params.amount;
+      }
+      // 操作个人账户
+      Model.UserAccount.update({ uid: params.uid }, { $inc: {totalIncome: income, totalCost: cost, totalBalance: signedAmount }}, {}, function (err, doc) {
+        if (err) {
+          handError(err, res);
+        } else {
+          console.log('记录账户成功！');
+          console.log(doc);
+          res.json({ state: 1, msg: '记录成功！', data: data });
+        }
+      });
     }
   });
-
-
 });
 
 
@@ -341,16 +334,14 @@ router.post("/register", (req, res) => {
    * @param {objectId} uid 用户id
    * @param {string} username 用户名
    */
-  var makeUserMonthAccountCollection = function (uid, username) {
+  var makeUserAccount = function (uid) {
     var monthCollectionPara = {
       uid: uid,
-      username: username,
-      monthRecord: [],
       totalIncome : 0,  // 收入
-	    totalExpenses: 0, // 支出
+	    totalCost: 0, // 支出
 	    totalBalance : 0, // 结余
     };
-    Model.UserMonthAccount.create(monthCollectionPara, (err, data) => {
+    Model.UserAccount.create(monthCollectionPara, (err, data) => {
       if (err) {
         res.json({
           state: 0,
@@ -362,10 +353,54 @@ router.post("/register", (req, res) => {
     });
   }
 
+  /**
+   * 生成统计账户
+   * @param {string} uid 
+   */
+  var makeUserExpCostType = function (uid) {
+    var defaultTypes = [
+      {
+        name: "生活",
+        type: 2,
+        uid: uid
+      },
+      {
+        name: "吃饭",
+        type: 2,
+        uid: uid
+      },
+      {
+        name: "旅游",
+        type: 2,
+        uid: uid
+      },
+      {
+        name: "还钱",
+        type: 1,
+        uid: uid
+      },
+    ];
+
+    defaultTypes.forEach(ditem => {
+      Model.ExpenseCostTypes.create(ditem, (err, data) => {
+        if (err) {
+          res.json({
+            state: 0,
+            err: err
+          });
+        } else {
+          console.log('生成类型成功');
+        }
+      });
+    });
+  }
+
   var registerDb = function () {
     Model.User.create({
       username,
-      password
+      password,
+      tel: '',
+      realname: ''
     }, (err, data) => {
       if (err) {
         res.json({
@@ -374,7 +409,10 @@ router.post("/register", (req, res) => {
         });
       } else {
         // 创建月账户
-        makeUserMonthAccountCollection(data._id, data.username);
+        makeUserAccount(data._id);
+        // 生成支出收入类型
+        makeUserExpCostType(data._id);
+
         res.json({
           data: data,
           state: 1,
@@ -402,6 +440,36 @@ router.post("/register", (req, res) => {
         registerDb();
       }
       
+    }
+  });
+});
+
+/**
+ * 查询用户信息
+ * @param  {string} username
+ * @param  {string} password
+ */
+router.post("/getUserInfo", (req, res) => {
+  var uid = req.body.uid;
+  if (!uid) {
+    res.json({
+      state: 2,
+      msg: '缺少uid',
+    });
+    return;
+  }
+  Model.User.find({ _id: mongoose.Types.ObjectId(uid) }, (err, doc) => {
+    if (err) {
+      handError(err, data);
+    } else {
+      res.json({
+        state: 1,
+        msg: '查询成功！',
+        data: {
+          username: doc.username,
+          tel: doc.tel
+        }
+      });
     }
   });
 });

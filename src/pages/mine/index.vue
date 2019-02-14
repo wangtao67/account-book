@@ -25,11 +25,15 @@
 </template>
 
 <script>
+  import { getUserInfo } from '@service/http';
   export default {
     data() {
       return {
         
       }
+    },
+    created () {
+      this.getUser();
     },
     mounted() {
       
@@ -37,7 +41,13 @@
     components: {
     },
     methods: {
-      
+      getUser () {
+        getUserInfo({
+          uid: Storages.cookie.get('uid'),
+        }).then(({data})=> {
+          console.log(data);
+        });
+      }
     }
   }
 </script>

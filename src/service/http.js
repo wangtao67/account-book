@@ -21,8 +21,8 @@ export const getRecordList = function (params = {}) {
 }
 
 // 获取月金额统计
-export const getMonthAccount = function () {  
-  return http.post(baseUrl + 'userMonthAccount');
+export const getMonthAccount = function (params = {}) {  
+  return http.post(baseUrl + 'userMonthAccount', params);
 }
 
 // 获取类型
@@ -48,4 +48,9 @@ export const userLogin = function (params) {
 // 注册
 export const userRegister = function (params) {  
   return http.post(baseUrl + 'register', params);
+}
+
+// 获取用户信息
+export const getUserInfo = function (params) {  
+  return http.post(baseUrl + 'getUserInfo', params);
 }

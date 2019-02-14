@@ -17,7 +17,7 @@
       <div class="tab-content">
         <div v-show="payType === 1" class="cost-wrap">
           <ul class="type-list flex">
-            <li v-for="item in incomeTypes" class="type-item" @click="selectType(item)">
+            <li v-for="item in incomeTypes" class="type-item" :key="item.name" @click="selectType(item)">
               <div class="add-img">{{item.name.substring(0, 1)}}</div>
               <div class="type-name">{{item.name}}</div>
             </li>
@@ -25,7 +25,7 @@
         </div>
         <div v-show="payType === 2" class="income-wrap">
           <ul class="type-list flex">
-            <li v-for="item in costTypes" class="type-item" @click="selectType(item)">
+            <li v-for="item in costTypes" class="type-item" :key="item.name" @click="selectType(item)">
               <div class="add-img">{{item.name.substring(0, 1)}}</div>
               <div class="type-name">{{item.name}}</div>
             </li>

@@ -7,15 +7,15 @@
       </div>
       <div class="income h-item flex-1">
         <div class="it-name">收入(元)</div>
-        <div class="it-val">{{ 700 }}</div>
+        <div class="it-val">{{ monthAccount.userIncome }}</div>
       </div>
       <div class="cost h-item flex-1">
         <div class="it-name">支出(元)</div>
-        <div class="it-val">{{ 700 }}</div>
+        <div class="it-val">{{ monthAccount.userCost }}</div>
       </div>
       <div class="rest h-item flex-1">
         <div class="it-name">结余(元)</div>
-        <div class="it-val">{{ 300 }}</div>
+        <div class="it-val">{{ monthAccount.userBalance }}</div>
       </div>
     </div>
     <div class="record">
@@ -57,6 +57,7 @@
         modalMonth: {},
         slectMonth: {},
         showMonthMd: false,
+        monthAccount: {}, // 月统计
         monthSlots: [
           {
             flex: 1,
@@ -88,11 +89,30 @@
     },
     created() {
       this.makeMonthSlots();
+      this.getMonthAccount();
       this.getRecord();
     },
     components: {
     },
     methods: {
+      /**
+       * 获取月统计数据
+       */
+      getMonthAccount () {
+        let me = this;
+        let searchMonth = me.formatMonth(me.slectMonth);
+        getMonthAccount({
+          uid: Storages.cookie.get('uid'),
+          month: searchMonth
+        }).then(({data}) => {
+          if (data.state === 1) {
+            me.monthAccount = data.data;
+            console.log(data)
+          } else  {
+            me.$toast(data.msg);
+          }
+        });   
+      },
       /**
        * 获取记录数据
        */
@@ -142,6 +162,8 @@
         this.showMonthMd = false;
         this.slectMonth = this.modalMonth;
         this.getRecord();
+        this.getMonthAccount();
+        
       },
       /**
        * 将年月格式化为标准6位年月

@@ -10,39 +10,46 @@ var schemaObj = {
 	  tel: String,
 	  realname: String,
 	  memo: String
-	}, { collection: 'user' }),
+	}, { 
+		collection: 'user' 
+	}),
 
-	// 月账户统计表
-	UserMonthAccount: Schema({
+	// 账户统计表
+	UserAccount: Schema({
 		uid: String, // 用户id
-		username: String, 
-	  monthRecord: [{
-			month: String,
-			cost: Number,
-			income: Number,
-			balance: Number
-		}],    // 
 	  totalIncome : Number,  // 收入
-	  totalExpenses: Number, // 支出
+	  totalCost: Number, // 支出
 	  totalBalance : Number, // 结余
-	}, { collection: 'userMonthAccount' }),
+	}, { 
+		collection: 'userAccount' 
+	}),
 
 	// 记录列表
 	Records: Schema({
 		uid: String, // 用户id
-	  date: String, // 格式：2018-02-23
+		date: String, // 格式：2018-02-23
+		createDate:  {
+			type: Date,
+      default: Date.now
+		},
 	  amount: Number,
 	  useTypeId: String, // 消费（收入）类型id
 	  useTypeName: String, // 消费（收入）类型
 	  type : Number, // 消费or收入 1/2
 	  memo: String
-	}, { collection: 'record' }),
+	}, { 
+		collection: 'record' 
+	}),
 
 	// 支出/收入类型
 	ExpenseCostTypes: Schema({
 		uid: String,
 	  name: String,
-	  type: Number
+		type: Number,
+		date: {
+			type: Date,
+      default: Date.now
+		}
 	}, { collection: 'expenseTypes' }),
 } 
 
