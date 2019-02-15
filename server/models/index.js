@@ -6,7 +6,8 @@ var schemaObj = {
 	// 用户列表
 	User: Schema({
 	  username: String,
-	  password: String,
+		password: String,
+		sex: String,
 	  tel: String,
 	  realname: String,
 	  memo: String

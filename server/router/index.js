@@ -422,7 +422,6 @@ router.post("/register", (req, res) => {
       }
     });
   }
-
   
   Model.User.find({ username }, (err, data) => {
     if (err) {
@@ -439,7 +438,6 @@ router.post("/register", (req, res) => {
       } else {
         registerDb();
       }
-      
     }
   });
 });
@@ -458,7 +456,7 @@ router.post("/getUserInfo", (req, res) => {
     });
     return;
   }
-  Model.User.find({ _id: mongoose.Types.ObjectId(uid) }, (err, doc) => {
+  Model.User.findOne({ _id: mongoose.Types.ObjectId(uid) }, (err, doc) => {
     if (err) {
       handError(err, data);
     } else {
@@ -467,7 +465,9 @@ router.post("/getUserInfo", (req, res) => {
         msg: '查询成功！',
         data: {
           username: doc.username,
-          tel: doc.tel
+          sex: doc.sex,
+          tel: doc.tel,
+          realname: doc.realname
         }
       });
     }

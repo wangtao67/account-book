@@ -107,7 +107,6 @@
         }).then(({data}) => {
           if (data.state === 1) {
             me.monthAccount = data.data;
-            console.log(data)
           } else  {
             me.$toast(data.msg);
           }
@@ -124,7 +123,6 @@
           searchMonth: searchMonth
         }).then(({data}) => {
           if (data.state === 1) {
-            console.log(data);
             me.recordList = data.list;
           } else  {
             me.$toast(data.msg);

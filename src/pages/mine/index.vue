@@ -3,11 +3,12 @@
     <div class="basic-info">
       <div class="info flex">
         <div class="head-img">
-          <img src="../">
+          <img src="../../assets/img/man.png">
         </div>
         <div class="user-wrap flex-1">
-          <p class="username">153344443333</p>
-          <p class="phone">手机号：{{'18938495895'}}</p>
+          <p class="username">{{ userinfo.username }}</p>
+          <p v-if="userinfo.tel" class="phone">手机号：{{ userinfo.tel || '绑定电话' }}</p>
+          <p v-else class="bind-phone">绑定电话</p>          
         </div>
       </div>
       <div class="accounts flex">
@@ -29,7 +30,7 @@
   export default {
     data() {
       return {
-        
+        userinfo: {}
       }
     },
     created () {
@@ -42,10 +43,15 @@
     },
     methods: {
       getUser () {
+        var me = this;
         getUserInfo({
           uid: Storages.cookie.get('uid'),
         }).then(({data})=> {
-          console.log(data);
+          if (data.state === 1) {
+            me.userinfo = data.data;
+          } else  {
+            me.$toast(data.msg);
+          }
         });
       }
     }
@@ -68,14 +74,18 @@
           }
         }
         .user-wrap {
-          margin-left: .08rem;
+          margin-left: .1rem;
           .username {
             font-size: .14rem;
           }
-          .phone {
+          .phone,
+          .bind-phone {
             margin-top: .04rem;
             font-size: .12rem;
             color: #747272;
+          }
+          .bind-phone {
+            color: #165a87;
           }
         }
       }  
