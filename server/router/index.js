@@ -129,6 +129,70 @@ router.post("/userMonthAccount", (req, res) => {
   });
 });
 
+// 查询用户月各消费类型支出
+router.post("/userMonthTypeAccount", (req, res) => {
+  var uid = req.body.uid;
+  var month = req.body.month;
+  var type = req.body.type || 2; // 1 - income, 2 - cost
+  
+
+  console.log('/userMonthTypeAccount');
+  console.log('uid', uid);
+
+  if (!uid) {
+    res.json({
+      state: 2,
+      msg: '缺少uid',
+    });
+    return;
+  }
+
+  var dateReg = new RegExp(month); 
+  // 根据date查询该月份数据，并按日期排序
+  Model.Records.find({ uid, type, 'date': dateReg }).exec(function(err, doc){
+    if (err) {
+      res.json({
+        state: 0,
+        err: err
+      });
+    } else {
+      console.log('doc: =====================');
+      console.log(doc);
+
+      var category = {}, total = 0;
+      doc.forEach(item => {
+        total += item.amount;
+        if (category.hasOwnProperty(item.useTypeName)) {
+          category[item.useTypeName] += item.amount;
+        } else  {
+          category[item.useTypeName] = item.amount;
+        }
+      });
+
+      var categorys = [];
+      for (let key in category) {
+        let percent = (category[key]/total).toFixed(2);
+        categorys.push({
+          name: key,
+          value: category[key],
+          percent: percent
+        });
+      }
+      
+      res.json({
+        state: 1,
+        msg: '查询成功！',
+        data: {
+          type,
+          categorys
+        }
+      });
+    }
+  });
+});
+
+
+
 /**
  * 新增消费记录
  * @param  {string} id 

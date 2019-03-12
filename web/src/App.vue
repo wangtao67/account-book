@@ -17,8 +17,7 @@
       }
     },
     created() {
-
-        
+  
     },
     watch: {
       '$route' (to, from) {

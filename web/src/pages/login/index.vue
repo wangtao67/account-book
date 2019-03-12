@@ -88,7 +88,7 @@
               } else  {
                 me.$toast(data.msg);
               }
-            });   
+            }); 
           } else {
             userRegister({
               username,

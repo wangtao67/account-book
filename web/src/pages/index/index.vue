@@ -2,8 +2,8 @@
   <div class="index-page">
     <div class="header flex bg-white">
       <div class="month-wrap flex-1">
-        <div class="year">{{ slectMonth.year }}</div>
-        <div class="month" @click="chooseMonth">{{ slectMonth.month }}月 <span class="down-arrow"></span></div>        
+        <div class="year">{{ selectMonth.year }}</div>
+        <div class="month" @click="chooseMonth">{{ selectMonth.month }}月 <span class="down-arrow"></span></div>        
       </div>
       <div class="income h-item flex-1">
         <div class="it-name">收入(元)</div>
@@ -36,7 +36,7 @@
         </li>
       </ul>
     </div>
-    <mt-popup
+    <!-- <mt-popup
       class="month-modal"
       v-model="showMonthMd"
       position="bottom">
@@ -45,62 +45,48 @@
           <div class="sure-btn" @click="chooseMonthFn">确定</div>
         </div>
         <mt-picker :slots="monthSlots" @change="monthChange"></mt-picker>
-    </mt-popup>
+    </mt-popup> -->
+    <monthSelect  :showMd="showMonthMd" :defalutMonth="fomerMonthStr" @showChange="monthShowChange" @dateCreated="dateCreated" @cancelFn="showMonthSelect = false" @sureFn="chooseMonthCb"></monthSelect>
   </div>
 </template>
 
+
 <script>
   import { getRecordList, getMonthAccount } from '@service/http';
+  import { mapState, mapGetters, mapActions } from 'vuex';
   export default {
     data() {
       return {
         modalMonth: {},
-        slectMonth: {},
+        // selectMonth: {},
         showMonthMd: false,
         monthAccount: {}, // 月统计
-        monthSlots: [
-          {
-            flex: 1,
-            values: ['2017', '2018'],
-            className: 'slot1',
-            textAlign: 'right',
-          }, {
-            flex: 1,
-            divider: true,
-            content: '年',
-            className: 'slot2',
-            textAlign: 'center'
-          }, {
-            flex: 1,
-            values: ['01', '02', '03', '04', '05', '06','07', '08', '09', '10', '11', '12'],
-            className: 'slot3',
-            textAlign: 'left'
-          },
-          {
-            flex: 1,
-            divider: true,
-            content: '月',
-            className: 'slot4',
-            textAlign: 'left'
-          }, 
-        ],
         recordList: []
       }
     },
     created() {
-      this.makeMonthSlots();
-      this.getMonthAccount();
-      this.getRecord();
+      // this.makeMonthSlots();
+      // this.getMonthAccount();
+      // this.getRecord();
     },
-    components: {
+    computed: {
+      ...mapState({ 
+        selectMonth: state => state.nowMonth
+      }),
+      fomerMonthStr () {
+        return this.formatMonth(this.selectMonth);
+      }
     },
     methods: {
+      ...mapActions([
+        'setNowMonth' 
+      ]),
       /**
        * 获取月统计数据
        */
       getMonthAccount () {
         let me = this;
-        let searchMonth = me.formatMonth(me.slectMonth);
+        let searchMonth = me.formatMonth(me.selectMonth);
         getMonthAccount({
           uid: Storages.cookie.get('uid'),
           month: searchMonth
@@ -117,7 +103,7 @@
        */
       getRecord () {
         let me = this;
-        let searchMonth = me.formatMonth(me.slectMonth);
+        let searchMonth = me.formatMonth(me.selectMonth);
         getRecordList({
           uid: Storages.cookie.get('uid'),
           searchMonth: searchMonth
@@ -129,46 +115,75 @@
           }
         });   
       },
+      monthShowChange (val) {
+        this.showMonthMd = val;
+      },
+      chooseMonthCb (val) {
+        this.showMonthMd = false;
+        this.setNowMonth(val);
+        this.getRecord();
+      },
       /**
-       * 生成年月数据
+       * 月份组件渲染年月信息后
+       * @param {object} val {year, month} 
        */
-      makeMonthSlots () {
-        let dateObj = new Date();
-        let nowYear = dateObj.getFullYear(),
-          nowMonth = dateObj.getMonth() + 1;
-        let yearArr = [];
-        for (let i = nowYear; i >= nowYear - 2; i--) {
-          yearArr.push(String(i));
+      dateCreated (val) {
+        let me = this;
+        console.log(val);
+        var monthObj;
+        if (me.selectMonth.month) {
+          monthObj = me.selectMonth;
+        } else {
+          monthObj = val;
+          this.setNowMonth(val);
         }
-        yearArr.reverse(); 
-        this.monthSlots[0].values = yearArr;
-        this.monthSlots[0].defaultIndex = yearArr.length - 1;
-        this.monthSlots[2].defaultIndex = nowMonth - 1;
+        let searchMonth = this.formatMonth(monthObj);
+        this.getMonthAccount();
+        this.getRecord();
+      },
+      // /**
+      //  * 生成年月数据
+      //  */
+      // makeMonthSlots () {
+      //   var me = this;
+      //   let dateObj = new Date();
+      //   let nowYear = dateObj.getFullYear(),
+      //     nowMonth = dateObj.getMonth() + 1;
+      //   let yearArr = [];
+      //   for (let i = nowYear; i >= nowYear - 2; i--) {
+      //     yearArr.push(String(i));
+      //   }
+      //   yearArr.reverse(); 
+      //   me.monthSlots[0].values = yearArr;
+      //   me.monthSlots[0].defaultIndex = yearArr.length - 1;
+      //   me.monthSlots[2].defaultIndex = nowMonth - 1;
         
-        this.slectMonth.year =  nowYear;
-        this.slectMonth.month = nowMonth;
-      },   
+      //   let monthObj = {
+      //     year: nowYear,
+      //     month: nowMonth
+      //   };
+      //   me.setNowMonth(monthObj);
+      // },   
       chooseMonth () {
         this.showMonthMd = true;
       },
-      monthChange (picker, value) {
-        this.modalMonth.year = value[0];
-        this.modalMonth.month = value[1];
-        console.log(value);
-      },
-      chooseMonthFn () {
-        this.showMonthMd = false;
-        this.slectMonth = this.modalMonth;
-        this.getRecord();
-        this.getMonthAccount();
+      // chooseMonthFn () {
+      //   this.showMonthMd = false;
+      //   // this.selectMonth = this.modalMonth;
+      //   this.setNowMonth(val);
+      //   this.getRecord();
+      //   this.getMonthAccount();
         
-      },
+      // },
       /**
        * 将年月格式化为标准6位年月
        */
-      formatMonth (slectMonth) {
-        let year = slectMonth.year;        
-        let month = slectMonth.month;
+      formatMonth (selectMonth) {
+        if (!selectMonth.month || !selectMonth.year) {
+          return;
+        }
+        let year = selectMonth.year;        
+        let month = selectMonth.month;
         month = Number(month);
         if (month < 10) {
           month = '0' + month;
