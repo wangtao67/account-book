@@ -53,7 +53,7 @@
       </div>
     </div>
 
-    <monthSelect  :showMd="showMonthSelect" @showChange="monthShowChange" @dateCreated="dateCreated" @cancelFn="showMonthSelect = false" @sureFn="chooseMonthCb"></monthSelect>
+    <monthSelect  :showMd="showMonthSelect" :defalutMonth="fomerMonthStr" @showChange="monthShowChange" @dateCreated="dateCreated" @cancelFn="showMonthSelect = false" @sureFn="chooseMonthCb"></monthSelect>
   </div>
 </template>
 
@@ -86,20 +86,29 @@
       ...mapState({ 
         selectMonth: state => state.nowMonth
       }),
+      fomerMonthStr () {
+        return this.formatMonth(this.selectMonth);
+      }
     },
     methods: {
       ...mapActions([
         'setNowMonth' 
       ]),
-      fnn () { this.showMonthSelect = true; console.log(this.showMonthSelect); },
+      fnn () { 
+        this.showMonthSelect = true; 
+        console.log(this.showMonthSelect); 
+      },
       checkTab (type) {
         this.payType = type;
       },
       chooseMonthCb (val) {
-        this.showMonthSelect = false;
-        // this.nowDate.year = val.year;
-        // this.nowDate.month = val.month;
-        this.setNowMonth(val);
+        var me = this;
+        me.showMonthSelect = false;
+        me.setNowMonth(val);
+        console.log(val);
+        console.log(me.fomerMonthStr);
+        me.getMonthAccount(me.formatMonth(val));
+        me.getUserMonthTypeAccountFn (me.formatMonth(val));
       },
       /**
        * 月份组件渲染年月信息后

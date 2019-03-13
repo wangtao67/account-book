@@ -23,8 +23,8 @@
       <ul v-else class="day-record-list">
         <li class="day-record-item" v-for="item in recordList" :key="item.id">
           <div class="it-header">
-            <span class="date">{{item.date}}</span>
-            <span class="total-cost fr">支出：{{item.totalCost}}&nbsp;&nbsp;&nbsp;收入：{{item.totalIncome}}</span>
+            <span class="date">{{ item.date | dateWeek }}</span>
+            <span class="total-cost fr"><span v-if="item.totalCost">支出：{{item.totalCost}}</span>&nbsp;&nbsp; <span v-if="item.totalIncome">收入：{{ item.totalIncome }}</span></span>
           </div>
           <ul class="record-list">
             <li class="record-item" v-for="recItem in item.records" :key="recItem.id">
@@ -36,16 +36,6 @@
         </li>
       </ul>
     </div>
-    <!-- <mt-popup
-      class="month-modal"
-      v-model="showMonthMd"
-      position="bottom">
-        <div class="modal-header flex">
-          <div class="flex-1" @click="showMonthMd = false">取消</div>
-          <div class="sure-btn" @click="chooseMonthFn">确定</div>
-        </div>
-        <mt-picker :slots="monthSlots" @change="monthChange"></mt-picker>
-    </mt-popup> -->
     <monthSelect  :showMd="showMonthMd" :defalutMonth="fomerMonthStr" @showChange="monthShowChange" @dateCreated="dateCreated" @cancelFn="showMonthSelect = false" @sureFn="chooseMonthCb"></monthSelect>
   </div>
 </template>
@@ -65,9 +55,7 @@
       }
     },
     created() {
-      // this.makeMonthSlots();
-      // this.getMonthAccount();
-      // this.getRecord();
+
     },
     computed: {
       ...mapState({ 
@@ -75,6 +63,38 @@
       }),
       fomerMonthStr () {
         return this.formatMonth(this.selectMonth);
+      }
+    },
+    filters: {
+      dateWeek (date) {
+        var dateO = new Date(date);
+        var dateSingle = dateO.getDate();
+        var weekNum = dateO.getDay();
+        var week = '';
+        switch (weekNum) {
+          case 0:
+            week = '周日';
+            break;
+          case 1:
+            week = '周一';
+            break;
+          case 2:
+            week = '周二';
+            break;
+          case 3:
+            week = '周三';
+            break;
+          case 4:
+            week = '周三';
+            break;
+          case 5:
+            week = '周五';
+            break;
+          case 6:
+            week = '周六';
+            break;
+        }
+        return dateSingle + '日 ' + week;
       }
     },
     methods: {
@@ -118,9 +138,13 @@
       monthShowChange (val) {
         this.showMonthMd = val;
       },
+      /**
+       * 选择好月份回调
+       */
       chooseMonthCb (val) {
         this.showMonthMd = false;
         this.setNowMonth(val);
+        this.getMonthAccount();
         this.getRecord();
       },
       /**
@@ -129,52 +153,20 @@
        */
       dateCreated (val) {
         let me = this;
-        console.log(val);
         var monthObj;
         if (me.selectMonth.month) {
           monthObj = me.selectMonth;
         } else {
           monthObj = val;
-          this.setNowMonth(val);
+          me.setNowMonth(val);
         }
-        let searchMonth = this.formatMonth(monthObj);
-        this.getMonthAccount();
-        this.getRecord();
+        let searchMonth = me.formatMonth(monthObj);
+        me.getMonthAccount();
+        me.getRecord();
       },
-      // /**
-      //  * 生成年月数据
-      //  */
-      // makeMonthSlots () {
-      //   var me = this;
-      //   let dateObj = new Date();
-      //   let nowYear = dateObj.getFullYear(),
-      //     nowMonth = dateObj.getMonth() + 1;
-      //   let yearArr = [];
-      //   for (let i = nowYear; i >= nowYear - 2; i--) {
-      //     yearArr.push(String(i));
-      //   }
-      //   yearArr.reverse(); 
-      //   me.monthSlots[0].values = yearArr;
-      //   me.monthSlots[0].defaultIndex = yearArr.length - 1;
-      //   me.monthSlots[2].defaultIndex = nowMonth - 1;
-        
-      //   let monthObj = {
-      //     year: nowYear,
-      //     month: nowMonth
-      //   };
-      //   me.setNowMonth(monthObj);
-      // },   
       chooseMonth () {
         this.showMonthMd = true;
       },
-      // chooseMonthFn () {
-      //   this.showMonthMd = false;
-      //   // this.selectMonth = this.modalMonth;
-      //   this.setNowMonth(val);
-      //   this.getRecord();
-      //   this.getMonthAccount();
-        
-      // },
       /**
        * 将年月格式化为标准6位年月
        */
@@ -227,9 +219,6 @@
         margin-top: .6rem;
         text-align: center;
         color: #888;
-      }
-      .day-record-list {
-
       }
       .it-header {
         padding: .1rem;

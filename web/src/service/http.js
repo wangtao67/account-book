@@ -20,45 +20,45 @@ http.interceptors.push((request, next) => {
 
 // 获取记录列表
 export const getRecordList = function (params = {}) {  
-  return http.post(baseUrl + 'recordList', params);
+  return http.post(baseUrl + 'account/recordList', params);
 };
 
 // 获取月金额统计
 export const getMonthAccount = function (params = {}) {  
-  return http.post(baseUrl + 'userMonthAccount', params);
+  return http.post(baseUrl + 'account/userMonthAccount', params);
 };
 
 // 获取月各类型金额统计
 export const getUserMonthTypeAccount = function (params = {}) {  
-  return http.post(baseUrl + 'userMonthTypeAccount', params);
+  return http.post(baseUrl + 'account/userMonthTypeAccount', params);
 };
 
 // 获取类型
 export const getTypeList = function (params = {}) {  
-  return http.get(baseUrl + 'expCostTypes', { params });
+  return http.get(baseUrl + 'userType/expCostTypes', { params });
 };
 
 // 新增类型
 export const addExpCostType = function (params) {  
-  return http.post(baseUrl + 'addexpCostType', params);
+  return http.post(baseUrl + 'userType/addexpCostType', params);
 };
 
 // 新增记录
 export const addExpCostRecord = function (params) {  
-  return http.post(baseUrl + 'addRecord', params);
+  return http.post(baseUrl + 'account/addRecord', params);
 };
 
 // 登录
 export const userLogin = function (params) {  
-  return http.post(baseUrl + 'login', params);
+  return http.post(baseUrl + 'user/login', params);
 };
 
 // 注册
 export const userRegister = function (params) {  
-  return http.post(baseUrl + 'register', params);
+  return http.post(baseUrl + 'user/register', params);
 };
 
 // 获取用户信息
 export const getUserInfo = function (params) {  
-  return http.post(baseUrl + 'getUserInfo', params);
+  return http.post(baseUrl + 'user/getUserInfo', params);
 };
