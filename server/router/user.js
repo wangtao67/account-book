@@ -15,8 +15,6 @@ const handError = function (err, res) {
   });
 }
 
-/********************  user  *********************/
-
 /**
  * 登录
  * @param  {number} type 类型：1-收入，2-支出
@@ -250,8 +248,6 @@ router.post("/getUserInfo", (req, res) => {
     }
   });
 });
-
-/********************  user end *********************/
 
 module.exports = router;
 

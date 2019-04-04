@@ -48,7 +48,6 @@
     data() {
       return {
         modalMonth: {},
-        // selectMonth: {},
         showMonthMd: false,
         monthAccount: {}, // 月统计
         recordList: []

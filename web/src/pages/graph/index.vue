@@ -116,21 +116,16 @@
        */
       dateCreated (val) {
         let me = this;
-        console.log(val);
-        // this.nowDate.year = val.year;
-        // this.nowDate.month = val.month;
-        // this.setNowMonth(val);
-        console.log(me.s)
         var monthObj;
         if (me.selectMonth.month) {
           monthObj = me.selectMonth;
         } else {
           monthObj = val;
-          this.setNowMonth(val);
+          me.setNowMonth(val);
         }
-        let searchMonth = this.formatMonth(monthObj);
-        this.getMonthAccount(searchMonth);
-        this.getUserMonthTypeAccountFn(searchMonth);
+        let searchMonth = me.formatMonth(monthObj);
+        me.getMonthAccount(searchMonth);
+        me.getUserMonthTypeAccountFn(searchMonth);
       },
       /**
        * 将年月格式化为标准6位年月
@@ -152,7 +147,6 @@
        */
       getMonthAccount (searchMonth) {
         let me = this;
-        // let searchMonth = '2019-02'; // me.formatMonth(me.slectMonth);
         getMonthAccount({
           uid: Storages.cookie.get('uid'),
           month: searchMonth
@@ -202,7 +196,6 @@
           return categorys;
         }
         
-
         /**
          * 生成pie图
          */
@@ -264,7 +257,6 @@
           pieChart.setOption(option);
         }
       },
-      
     }
   }
 </script>

@@ -44,6 +44,8 @@ Object.keys(components).forEach(key => {
   Vue.component(key, components[key]);
 });
 
+var vConsole = new VConsole();
+
 const app = new Vue({  // eslint-disable-line
   router,
   store,

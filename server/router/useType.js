@@ -6,17 +6,6 @@ const router = express.Router();
 //引入数据模型模块
 const Model = require("../models");
 
-var mongoose = require('mongoose'); 
-
-const handError = function (err, res) {
-  res.json({
-    state: 0,
-    err: err
-  });
-}
-
-/************************ useType  *************/
-
 // 查询消费类型
 router.get("/expCostTypes", (req, res) => {
   console.log('请求/recordList');
@@ -69,8 +58,6 @@ router.post("/addexpCostType", (req, res) => {
     }
   });
 });
-
-/************************ useType  end*************/
 
 module.exports = router;
 

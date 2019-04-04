@@ -6,8 +6,6 @@ const router = express.Router();
 //引入数据模型模块
 const Model = require("../models");
 
-var mongoose = require('mongoose'); 
-
 const handError = function (err, res) {
   res.json({
     state: 0,
@@ -15,20 +13,10 @@ const handError = function (err, res) {
   });
 }
 
-/************** record  ****************/
-
 // 查询所有记录
 router.post("/recordList", (req, res) => {
   var uid = req.body.uid;
   var searchMonth = req.body.searchMonth || '';
-
-  console.log('==============');
-  console.log(req.session);
-  console.log('接口：/recordList');
-  console.log('uid', uid);
-  console.log('searchMonth', searchMonth);
-  console.log('==============');
-  
   if (!uid) {
     res.json({
       state: 2,
@@ -85,10 +73,6 @@ router.post("/recordList", (req, res) => {
 router.post("/userMonthAccount", (req, res) => {
   var uid = req.body.uid;
   var month = req.body.month;
-
-  console.log('/userMonthAccount');
-  console.log('uid', uid);
-
   if (!uid) {
     res.json({
       state: 2,
@@ -97,7 +81,7 @@ router.post("/userMonthAccount", (req, res) => {
     return;
   }
 
-  var dateReg =new RegExp(month); 
+  var dateReg = new RegExp(month); 
   // 根据date查询该月份数据，并按日期排序
   Model.Records.find({ uid, 'date': dateReg }).exec(function(err, doc){
     if (err) {
@@ -106,9 +90,6 @@ router.post("/userMonthAccount", (req, res) => {
         err: err
       });
     } else {
-      console.log('doc: =====================');
-      console.log(doc);
-
       var userCost = 0, userIncome = 0, userBalance = 0;
       doc.forEach(item => {
         if (item.type === 1) {
@@ -137,10 +118,6 @@ router.post("/userMonthTypeAccount", (req, res) => {
   var month = req.body.month;
   var type = req.body.type || 2; // 1 - income, 2 - cost
   
-
-  console.log('/userMonthTypeAccount');
-  console.log('uid', uid);
-
   if (!uid) {
     res.json({
       state: 2,
@@ -158,9 +135,6 @@ router.post("/userMonthTypeAccount", (req, res) => {
         err: err
       });
     } else {
-      console.log('doc: =====================');
-      console.log(doc);
-
       var category = {}, total = 0;
       doc.forEach(item => {
         total += item.amount;
@@ -192,8 +166,6 @@ router.post("/userMonthTypeAccount", (req, res) => {
     }
   });
 });
-
-
 
 /**
  * 新增消费记录
@@ -251,7 +223,6 @@ router.post("/addRecord", (req, res) => {
     }
   });
 });
-
 
 module.exports = router;
 
