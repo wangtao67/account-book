@@ -107,7 +107,6 @@
         let me = this;
         let searchMonth = me.formatMonth(me.selectMonth);
         getMonthAccount({
-          uid: Storages.cookie.get('uid'),
           month: searchMonth
         }).then(({data}) => {
           if (data.state === 1) {
@@ -124,7 +123,6 @@
         let me = this;
         let searchMonth = me.formatMonth(me.selectMonth);
         getRecordList({
-          uid: Storages.cookie.get('uid'),
           searchMonth: searchMonth
         }).then(({data}) => {
           if (data.state === 1) {

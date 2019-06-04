@@ -1,12 +1,12 @@
 <template>
     <transition :name="fadeIn">
+    
+
         <div class="alertBox" v-show="show">
             <div class="alert-mask" v-show="isShowMask"></div>
-            <transition :name="translate">
-                <div class="content-box" :class="position" v-show="show">
-                    {{text}}
-                </div>
-            </transition>
+            <div class="content-box" :class="show ? 'fadein' : 'fadeout'">
+                {{text}}
+            </div>
         </div>
     </transition>
 </template>
@@ -15,27 +15,16 @@
 export default {
     data() {
         return {
+            show: false,
+            text: '',
+            position: 'center',
+            isShowMask: false,
+            time: 2500,
+            transition: true
         }
     },
     props: {
-        show: { // 是否显示此toast
-            default: false
-        },
-        text: { // 提醒文字
-            default: 'loading'
-        },
-        position: { // 提醒容器位置
-            default: 'center'
-        },
-        isShowMask: { // 是否显示遮罩层
-            default: false
-        },
-        time: { // 显示时间
-            default: 1500
-        },
-        transition: { // 是否开启动画
-            default: true
-        }
+        
     },
     mounted() { // 时间控制
         setTimeout(() => {
@@ -73,16 +62,36 @@ export default {
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
-        padding: 1rem 1.5rem;
+        padding: .1rem .15rem;
         background: rgba(0,0,0,.7);
         text-align: center;
         color: #fff;
-        font-size: 1.4rem;
+        font-size: .14rem;
         z-index: 5000;
         color: #fff;
-        border-radius: .3rem;
+        border-radius: .03rem;
 
     }
+    .fadein {    
+        animation: animate_in 0.25s;
+    }  
+    .fadeout {    
+        animation: animate_out 0.25s;    
+        opacity: 0;
+    }
+    @keyframes animate_in {
+        0% {      opacity: 0;
+        }
+        100%{      opacity: 1;
+        }
+    }
+    @keyframes animate_out {
+        0% {      opacity: 1;
+        }
+        100%{      opacity: 0;
+        }
+    }
+
     .content-box.top{
         top: 50px;
         margin-top: 0;
@@ -102,7 +111,7 @@ export default {
         top: 0;
         bottom: 0;
         right: 0;
-        background: rgba(0,0,0,.5);
+        // background: rgba(0,0,0,.5);
         z-index: 4999;
     }
     .fadeIn-enter-active, .fadeIn-leave-active{

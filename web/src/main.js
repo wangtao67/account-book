@@ -13,6 +13,9 @@ import '@assets/style/mintStyle.css';
 require('swiper/dist/css/swiper.css');
 import Storages from "@assets/js/storages";
 
+import toast from './components/toast/toast';
+Vue.prototype.$mytoast = toast;
+
 Vue.config.debug = true;
 
 Vue.use(VueResource);
@@ -44,7 +47,7 @@ Object.keys(components).forEach(key => {
   Vue.component(key, components[key]);
 });
 
-var vConsole = new VConsole();
+// var vConsole = new VConsole();
 
 const app = new Vue({  // eslint-disable-line
   router,

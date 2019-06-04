@@ -13,10 +13,10 @@ const router = new VueRouter({
 
 router.beforeEach((to, from, next) => {
   document.title = to.meta.title || document.title;
-  let pathNames = ['login', 'register'];
-  let u = Storages.cookie.get('uid');
+  let pathNames = ['login', 'register', 'test'];
+  let token = Storages.cookie.get('token');
   // 如果访问paths中包含的路径或者已登录，可以进入路由页面，否则返回登录
-  if (pathNames.includes(to.name) || u) {
+  if (pathNames.includes(to.name) || token) {
     next();
   } else {
     next({ name: 'login'});

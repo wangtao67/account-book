@@ -1,0 +1,5 @@
+[2019-05-16T19:44:10.469] [INFO] normal - test info 1
+[2019-05-16T19:45:00.187] [INFO] normal - test info 1
+[2019-05-16T19:45:00.188] [ERROR] normal - test info 1
+[2019-05-16T20:04:28.193] [INFO] normal - { uid: '5cdd4676c206cf27f029e599', searchMonth: '2019-05' }
+[2019-05-16T20:04:29.229] [INFO] normal - []

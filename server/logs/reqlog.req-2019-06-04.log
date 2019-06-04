@@ -1,0 +1,707 @@
+[2019-06-04T10:53:19.990] [INFO] default - req.url    /api/account/userMonthAccount
+[2019-06-04T10:53:19.995] [INFO] default - req.session:  82TsspbaZVkQlrtWaXsuiV4tbMrYLHbY
+[2019-06-04T10:53:19.996] [INFO] default - 未登录
+[2019-06-04T10:53:20.004] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 15ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T10:53:20.006] [INFO] default - req.url    /api/account/recordList
+[2019-06-04T10:53:20.007] [INFO] default - req.session:  K78sbpRGlaLJYoO6CAYJ8fiwCUDLJkNP
+[2019-06-04T10:53:20.007] [INFO] default - 未登录
+[2019-06-04T10:53:20.008] [INFO] default - [::1 OPTIONS /api/account/recordList 200 2ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T10:53:20.153] [INFO] default - req.url    /api/account/userMonthAccount
+[2019-06-04T10:53:20.154] [INFO] default - req.session:  6SFV7F5tAkFim_NsYMmSrbp6nl_N-l84
+[2019-06-04T10:53:20.154] [INFO] default - 未登录
+[2019-06-04T10:53:20.156] [INFO] default - [::1 POST /api/account/userMonthAccount 200 128ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T10:53:20.157] [INFO] default - req.url    /api/account/recordList
+[2019-06-04T10:53:20.157] [INFO] default - req.session:  juaqfOBv8Y9c1kG8a7EA9Kv-KjdunZU_
+[2019-06-04T10:53:20.158] [INFO] default - 未登录
+[2019-06-04T10:53:20.159] [INFO] default - [::1 POST /api/account/recordList 200 3ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:26:50.343] [INFO] default - [::1 GET /api/useType/expCostTypes?uid=5cdd4676c206cf27f029e599 200 109ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:27:15.511] [INFO] default - [::1 OPTIONS /api/account/addRecord 200 3ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:27:19.686] [INFO] default - [::1 POST /api/account/addRecord 200 4172ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:27:27.224] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 2ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:27:27.229] [INFO] default - [::1 OPTIONS /api/account/recordList 200 0ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:27:27.276] [INFO] default - 查询所有记录 /recordList
+[2019-06-04T11:27:27.279] [INFO] default - 查询所有记录 session Session {
+  cookie:
+   { path: '/',
+     _expires: 2019-06-07T14:47:27.275Z,
+     originalMaxAge: 300000000,
+     httpOnly: true } }
+[2019-06-04T11:27:27.349] [INFO] default - [::1 POST /api/account/userMonthAccount 200 85ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:27:27.523] [INFO] default - [::1 POST /api/account/recordList 200 248ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:27:51.853] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 1ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:27:51.856] [INFO] default - [::1 OPTIONS /api/account/userMonthTypeAccount 200 1ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:27:52.064] [INFO] default - [::1 POST /api/account/userMonthAccount 200 6ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:27:52.067] [INFO] default - [::1 POST /api/account/userMonthTypeAccount 200 7ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:27:55.990] [INFO] default - [::1 POST /api/account/userMonthAccount 200 4ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:27:55.993] [INFO] default - [::1 OPTIONS /api/account/recordList 200 1ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:27:56.018] [INFO] default - 查询所有记录 /recordList
+[2019-06-04T11:27:56.018] [INFO] default - 查询所有记录 session Session {
+  cookie:
+   { path: '/',
+     _expires: 2019-06-07T14:47:56.017Z,
+     originalMaxAge: 300000000,
+     httpOnly: true } }
+[2019-06-04T11:27:56.047] [INFO] default - [::1 POST /api/account/recordList 200 30ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:42:29.876] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 1ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:42:29.879] [INFO] default - [::1 OPTIONS /api/account/userMonthTypeAccount 200 1ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:42:29.993] [INFO] default - [::1 POST /api/account/userMonthTypeAccount 200 58ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:42:30.013] [INFO] default - [::1 POST /api/account/userMonthAccount 200 82ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:43:22.722] [INFO] default - [::1 OPTIONS /api/user/getUserInfo 200 2ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:43:22.774] [INFO] default - [::1 POST /api/user/getUserInfo 200 36ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:43:25.555] [INFO] default - [::1 POST /api/user/getUserInfo 200 5ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:44:22.008] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 1ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:44:22.011] [INFO] default - [::1 OPTIONS /api/account/userMonthTypeAccount 200 1ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:44:22.029] [INFO] default - [::1 POST /api/account/userMonthAccount 200 5ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:44:22.032] [INFO] default - [::1 POST /api/account/userMonthTypeAccount 200 6ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:44:25.799] [INFO] default - [::1 OPTIONS /api/user/getUserInfo 200 1ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:44:25.823] [INFO] default - [::1 POST /api/user/getUserInfo 200 5ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:44:35.789] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 1ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:44:35.796] [INFO] default - [::1 OPTIONS /api/account/recordList 200 1ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:44:35.820] [INFO] default - [::1 POST /api/account/userMonthAccount 200 5ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:44:35.832] [INFO] default - 查询所有记录 /recordList
+[2019-06-04T11:44:35.840] [INFO] default - 查询所有记录 session Session {
+  cookie:
+   { path: '/',
+     _expires: 2019-06-07T15:04:35.831Z,
+     originalMaxAge: 300000000,
+     httpOnly: true } }
+[2019-06-04T11:44:35.852] [INFO] default - [::1 POST /api/account/recordList 200 19ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:44:44.547] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 1ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:44:44.550] [INFO] default - [::1 OPTIONS /api/account/recordList 200 1ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:44:44.559] [INFO] default - [::1 POST /api/account/userMonthAccount 200 3ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:44:44.561] [INFO] default - 查询所有记录 /recordList
+[2019-06-04T11:44:44.561] [INFO] default - 查询所有记录 session Session {
+  cookie:
+   { path: '/',
+     _expires: 2019-06-07T15:04:44.560Z,
+     originalMaxAge: 300000000,
+     httpOnly: true } }
+[2019-06-04T11:44:44.565] [INFO] default - [::1 POST /api/account/recordList 200 5ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:44:46.597] [INFO] default - [::1 POST /api/account/userMonthAccount 200 5ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:44:46.604] [INFO] default - [::1 OPTIONS /api/account/userMonthTypeAccount 200 1ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:44:46.622] [INFO] default - [::1 POST /api/account/userMonthTypeAccount 200 3ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:44:53.649] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 2ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:44:53.656] [INFO] default - [::1 OPTIONS /api/account/recordList 200 1ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:44:53.683] [INFO] default - [::1 POST /api/account/userMonthAccount 200 5ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:44:53.693] [INFO] default - 查询所有记录 /recordList
+[2019-06-04T11:44:53.695] [INFO] default - 查询所有记录 session Session {
+  cookie:
+   { path: '/',
+     _expires: 2019-06-07T15:04:53.693Z,
+     originalMaxAge: 300000000,
+     httpOnly: true } }
+[2019-06-04T11:44:53.699] [INFO] default - [::1 POST /api/account/recordList 200 7ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:44:59.798] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 2ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:44:59.802] [INFO] default - [::1 OPTIONS /api/account/recordList 200 1ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:44:59.812] [INFO] default - [::1 POST /api/account/userMonthAccount 200 4ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:44:59.815] [INFO] default - 查询所有记录 /recordList
+[2019-06-04T11:44:59.815] [INFO] default - 查询所有记录 session Session {
+  cookie:
+   { path: '/',
+     _expires: 2019-06-07T15:04:59.814Z,
+     originalMaxAge: 300000000,
+     httpOnly: true } }
+[2019-06-04T11:44:59.821] [INFO] default - [::1 POST /api/account/recordList 200 7ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:45:18.195] [INFO] default - [::1 GET /api/useType/expCostTypes?uid=5cdd4676c206cf27f029e599 304 7ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:45:30.237] [INFO] default - [::1 OPTIONS /api/account/addRecord 200 2ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:45:30.290] [INFO] default - [::1 POST /api/account/addRecord 200 49ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:45:33.131] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 2ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:45:33.138] [INFO] default - [::1 OPTIONS /api/account/recordList 200 2ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:45:33.154] [INFO] default - [::1 POST /api/account/userMonthAccount 200 3ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:45:33.166] [INFO] default - 查询所有记录 /recordList
+[2019-06-04T11:45:33.168] [INFO] default - 查询所有记录 session Session {
+  cookie:
+   { path: '/',
+     _expires: 2019-06-07T15:05:33.165Z,
+     originalMaxAge: 300000000,
+     httpOnly: true } }
+[2019-06-04T11:45:33.180] [INFO] default - [::1 POST /api/account/recordList 200 14ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:45:36.951] [INFO] default - [::1 POST /api/account/userMonthAccount 200 4ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:45:36.954] [INFO] default - 查询所有记录 /recordList
+[2019-06-04T11:45:36.958] [INFO] default - 查询所有记录 session Session {
+  cookie:
+   { path: '/',
+     _expires: 2019-06-07T15:05:36.954Z,
+     originalMaxAge: 300000000,
+     httpOnly: true } }
+[2019-06-04T11:45:36.968] [INFO] default - [::1 POST /api/account/recordList 200 15ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:46:14.881] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 1ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:46:14.889] [INFO] default - [::1 OPTIONS /api/account/userMonthTypeAccount 200 1ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:46:14.914] [INFO] default - [::1 POST /api/account/userMonthAccount 200 4ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:46:14.931] [INFO] default - [::1 POST /api/account/userMonthTypeAccount 200 5ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:46:21.706] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 1ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:46:21.712] [INFO] default - [::1 OPTIONS /api/account/recordList 200 1ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:46:21.753] [INFO] default - 查询所有记录 /recordList
+[2019-06-04T11:46:21.756] [INFO] default - 查询所有记录 session Session {
+  cookie:
+   { path: '/',
+     _expires: 2019-06-07T15:06:21.753Z,
+     originalMaxAge: 300000000,
+     httpOnly: true } }
+[2019-06-04T11:46:21.763] [INFO] default - [::1 POST /api/account/userMonthAccount 200 12ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:46:21.770] [INFO] default - [::1 POST /api/account/recordList 200 17ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T11:46:23.524] [INFO] default - [::1 GET /api/useType/expCostTypes?uid=5cdd4676c206cf27f029e599 304 8ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T14:20:01.375] [INFO] default - token >>  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiMzQ0NDQiLCJleHAiOjE1NTk2MzEwMDEsImlhdCI6MTU1OTYyOTIwMX0.YfWnC4xCHWAG5DYeKGqdakHEi33gfzP7-D2gWJAWjvQ
+[2019-06-04T14:20:01.380] [INFO] default - result >>  34444
+[2019-06-04T14:20:43.827] [INFO] default - token >>  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiMTIzNDQ0IiwibmFtZSI6IkF0YW8ifSwiZXhwIjoxNTU5NjMxMDQzLCJpYXQiOjE1NTk2MjkyNDN9.y0cSoR_cT7ZI35YTqcaQrYqjXt6o_RXppAaXuqa1MS0
+[2019-06-04T14:20:43.831] [INFO] default - result >>  { id: '123444', name: 'Atao' }
+[2019-06-04T14:22:14.458] [INFO] default - token >>  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoiMTIzNDQ0IiwibmFtZSI6IkF0YW8ifSwiZXhwIjoxNTU5NjMxMTM0LCJpYXQiOjE1NTk2MjkzMzR9.ncew0iemmLSuqO8llK9ZGEsoXQBTFx4pZ8uGODo8TWA
+[2019-06-04T14:22:14.462] [INFO] default - result >>  { id: '123444', name: 'Atao' }
+[2019-06-04T14:42:54.857] [INFO] default - app.all >> token:   
+[2019-06-04T14:42:54.860] [INFO] default - app.all >> result:   err
+[2019-06-04T14:42:54.868] [INFO] default - [::1 GET /api/useType/expCostTypes?uid=5cdd4676c206cf27f029e599 200 11ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T14:51:52.665] [INFO] default - app.all >> token:   
+[2019-06-04T14:51:52.666] [INFO] default - app.all >> result:   err
+[2019-06-04T14:51:52.667] [INFO] default - [::1 OPTIONS /api/useType/expCostTypes?uid=5cdd4676c206cf27f029e599 200 2ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T14:51:53.420] [INFO] default - app.all >> token:   
+[2019-06-04T14:51:53.421] [INFO] default - app.all >> result:   err
+[2019-06-04T14:51:53.422] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T14:51:53.441] [INFO] default - app.all >> token:   
+[2019-06-04T14:51:53.442] [INFO] default - app.all >> result:   err
+[2019-06-04T14:51:53.443] [INFO] default - [::1 OPTIONS /api/account/recordList 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T14:52:08.581] [INFO] default - app.all >> token:   
+[2019-06-04T14:52:08.583] [INFO] default - app.all >> result:   err
+[2019-06-04T14:52:08.584] [INFO] default - [::1 OPTIONS /api/useType/expCostTypes 200 3ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T14:53:57.832] [INFO] default - app.all >> token:   
+[2019-06-04T14:53:57.836] [INFO] default - app.all >> result:   err
+[2019-06-04T14:53:57.851] [INFO] default - [::1 OPTIONS /api/user/login 200 21ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T14:55:25.790] [INFO] default - [::1 OPTIONS /api/user/login 200 16ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T14:55:41.264] [INFO] default - [::1 OPTIONS /api/user/login 200 3ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T14:56:20.278] [INFO] default - [::1 OPTIONS /api/user/login 200 16ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T14:57:48.229] [INFO] default - [::1 OPTIONS /api/user/login 200 17ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:00:07.309] [INFO] default - [::1 OPTIONS /api/user/login 200 16ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:00:07.747] [INFO] default - [::1 POST /api/user/login 200 436ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:00:14.857] [INFO] default - [::1 OPTIONS /api/user/login 200 3ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:00:14.868] [INFO] default - "/login" >> 登录成功, token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzE2MTksImlhdCI6MTU1OTYzMTYxNH0.UE1D0TzIshjnpQvVMYDXjRVHq4e_4tNad18_TlJ5eAg
+[2019-06-04T15:00:14.887] [INFO] default - [::1 POST /api/user/login 200 26ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:00:15.078] [INFO] default - app.all >> token:   
+[2019-06-04T15:00:15.079] [INFO] default - app.all >> result:   err
+[2019-06-04T15:00:15.080] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 3ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:00:15.096] [INFO] default - app.all >> token:   
+[2019-06-04T15:00:15.097] [INFO] default - app.all >> result:   err
+[2019-06-04T15:00:15.098] [INFO] default - [::1 OPTIONS /api/account/recordList 200 3ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:00:15.142] [INFO] default - app.all >> token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzE2MTksImlhdCI6MTU1OTYzMTYxNH0.UE1D0TzIshjnpQvVMYDXjRVHq4e_4tNad18_TlJ5eAg
+[2019-06-04T15:00:15.144] [INFO] default - app.all >> result:   { uid: '5cdd4676c206cf27f029e599', username: 'Atao' }
+[2019-06-04T15:00:15.160] [INFO] default - app.all >> token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzE2MTksImlhdCI6MTU1OTYzMTYxNH0.UE1D0TzIshjnpQvVMYDXjRVHq4e_4tNad18_TlJ5eAg
+[2019-06-04T15:00:15.162] [INFO] default - app.all >> result:   { uid: '5cdd4676c206cf27f029e599', username: 'Atao' }
+[2019-06-04T15:00:15.162] [INFO] default - 查询所有记录 /recordList
+[2019-06-04T15:00:15.163] [INFO] default - 查询所有记录 session Session {
+  cookie:
+   { path: '/',
+     _expires: 2019-06-07T18:20:15.160Z,
+     originalMaxAge: 300000000,
+     httpOnly: true } }
+[2019-06-04T15:00:15.288] [INFO] default - [::1 POST /api/account/userMonthAccount 200 145ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:00:16.236] [INFO] default - [::1 POST /api/account/recordList 200 1076ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:03:54.064] [INFO] default - [::1 OPTIONS /api/user/login 200 15ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:03:54.106] [INFO] default - "/login" >> 登录成功, token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzE4MzksImlhdCI6MTU1OTYzMTgzNH0.UWs7lzTiIOZTkAzoKToa-o3GSx_wKG2WemFWtyez3HA
+[2019-06-04T15:03:54.109] [INFO] default - [::1 POST /api/user/login 200 41ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:03:54.230] [INFO] default - app.all >> get token:   
+[2019-06-04T15:03:54.231] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:03:54.232] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:03:54.235] [INFO] default - app.all >> get token:   
+[2019-06-04T15:03:54.237] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:03:54.238] [INFO] default - [::1 OPTIONS /api/account/recordList 200 3ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:03:54.276] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzE4MzksImlhdCI6MTU1OTYzMTgzNH0.UWs7lzTiIOZTkAzoKToa-o3GSx_wKG2WemFWtyez3HA
+[2019-06-04T15:03:54.279] [INFO] default - app.all >> token result:   { uid: '5cdd4676c206cf27f029e599', username: 'Atao' }
+[2019-06-04T15:03:54.283] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzE4MzksImlhdCI6MTU1OTYzMTgzNH0.UWs7lzTiIOZTkAzoKToa-o3GSx_wKG2WemFWtyez3HA
+[2019-06-04T15:03:54.283] [INFO] default - app.all >> token result:   { uid: '5cdd4676c206cf27f029e599', username: 'Atao' }
+[2019-06-04T15:03:54.284] [INFO] default - 查询所有记录 /recordList
+[2019-06-04T15:03:54.285] [INFO] default - 查询所有记录 token uid 5cdd4676c206cf27f029e599
+[2019-06-04T15:03:54.292] [INFO] default - [::1 POST /api/account/userMonthAccount 200 16ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:03:55.305] [INFO] default - [::1 POST /api/account/recordList 200 1023ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:06:53.866] [INFO] default - app.all >> get token:   
+[2019-06-04T15:06:53.867] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:06:53.870] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 4ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:06:53.873] [INFO] default - app.all >> get token:   
+[2019-06-04T15:06:53.874] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:06:53.875] [INFO] default - [::1 OPTIONS /api/account/recordList 200 3ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:06:53.886] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzE4MzksImlhdCI6MTU1OTYzMTgzNH0.UWs7lzTiIOZTkAzoKToa-o3GSx_wKG2WemFWtyez3HA
+[2019-06-04T15:06:53.887] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:06:53.888] [INFO] default - [::1 POST /api/account/userMonthAccount 200 3ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:06:53.889] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzE4MzksImlhdCI6MTU1OTYzMTgzNH0.UWs7lzTiIOZTkAzoKToa-o3GSx_wKG2WemFWtyez3HA
+[2019-06-04T15:06:53.890] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:06:53.891] [INFO] default - [::1 POST /api/account/recordList 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:08:09.656] [INFO] default - [::1 OPTIONS /api/user/login 200 9ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:08:09.694] [INFO] default - "/login" >> 登录成功, token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzIwOTQsImlhdCI6MTU1OTYzMjA4OX0.sMe0YTv2CNTrqlfd53agMwKTbKUs7DJsPH8IWfDpzZI
+[2019-06-04T15:08:09.697] [INFO] default - [::1 POST /api/user/login 200 38ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:08:09.834] [INFO] default - app.all >> get token:   
+[2019-06-04T15:08:09.836] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:08:09.838] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 4ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:08:09.841] [INFO] default - app.all >> get token:   
+[2019-06-04T15:08:09.842] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:08:09.845] [INFO] default - [::1 OPTIONS /api/account/recordList 200 3ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:08:09.883] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzIwOTQsImlhdCI6MTU1OTYzMjA4OX0.sMe0YTv2CNTrqlfd53agMwKTbKUs7DJsPH8IWfDpzZI
+[2019-06-04T15:08:09.889] [INFO] default - app.all >> token result:   { uid: '5cdd4676c206cf27f029e599', username: 'Atao' }
+[2019-06-04T15:08:09.893] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzIwOTQsImlhdCI6MTU1OTYzMjA4OX0.sMe0YTv2CNTrqlfd53agMwKTbKUs7DJsPH8IWfDpzZI
+[2019-06-04T15:08:09.893] [INFO] default - app.all >> token result:   { uid: '5cdd4676c206cf27f029e599', username: 'Atao' }
+[2019-06-04T15:08:09.894] [INFO] default - 查询所有记录 /recordList
+[2019-06-04T15:08:09.894] [INFO] default - 查询所有记录 token uid 5cdd4676c206cf27f029e599
+[2019-06-04T15:08:09.900] [INFO] default - [::1 POST /api/account/userMonthAccount 200 17ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:08:10.909] [INFO] default - [::1 POST /api/account/recordList 200 1017ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:08:56.309] [INFO] default - app.all >> get token:   
+[2019-06-04T15:08:56.310] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:08:56.315] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 5ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:08:56.318] [INFO] default - app.all >> get token:   
+[2019-06-04T15:08:56.319] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:08:56.320] [INFO] default - [::1 OPTIONS /api/account/recordList 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:08:56.345] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzIwOTQsImlhdCI6MTU1OTYzMjA4OX0.sMe0YTv2CNTrqlfd53agMwKTbKUs7DJsPH8IWfDpzZI
+[2019-06-04T15:08:56.346] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:08:56.357] [INFO] default - [::1 POST /api/account/userMonthAccount 200 12ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:08:56.367] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzIwOTQsImlhdCI6MTU1OTYzMjA4OX0.sMe0YTv2CNTrqlfd53agMwKTbKUs7DJsPH8IWfDpzZI
+[2019-06-04T15:08:56.368] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:08:56.369] [INFO] default - [::1 POST /api/account/recordList 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:14:59.221] [INFO] default - app.all >> get token:   
+[2019-06-04T15:14:59.222] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:14:59.224] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 3ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:14:59.225] [INFO] default - app.all >> get token:   
+[2019-06-04T15:14:59.226] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:14:59.227] [INFO] default - [::1 OPTIONS /api/account/recordList 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:14:59.244] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzIwOTQsImlhdCI6MTU1OTYzMjA4OX0.sMe0YTv2CNTrqlfd53agMwKTbKUs7DJsPH8IWfDpzZI
+[2019-06-04T15:14:59.246] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:14:59.247] [INFO] default - [::1 POST /api/account/userMonthAccount 200 3ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:14:59.250] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzIwOTQsImlhdCI6MTU1OTYzMjA4OX0.sMe0YTv2CNTrqlfd53agMwKTbKUs7DJsPH8IWfDpzZI
+[2019-06-04T15:14:59.250] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:14:59.251] [INFO] default - [::1 POST /api/account/recordList 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:15:09.681] [INFO] default - app.all >> get token:   
+[2019-06-04T15:15:09.682] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:15:09.686] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 4ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:15:09.689] [INFO] default - app.all >> get token:   
+[2019-06-04T15:15:09.691] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:15:09.692] [INFO] default - [::1 OPTIONS /api/account/recordList 200 3ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:15:09.708] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzIwOTQsImlhdCI6MTU1OTYzMjA4OX0.sMe0YTv2CNTrqlfd53agMwKTbKUs7DJsPH8IWfDpzZI
+[2019-06-04T15:15:09.741] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:15:09.743] [INFO] default - [::1 POST /api/account/userMonthAccount 200 35ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:15:09.744] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzIwOTQsImlhdCI6MTU1OTYzMjA4OX0.sMe0YTv2CNTrqlfd53agMwKTbKUs7DJsPH8IWfDpzZI
+[2019-06-04T15:15:09.746] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:15:09.746] [INFO] default - [::1 POST /api/account/recordList 200 3ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:16:39.065] [INFO] default - app.all >> get token:   
+[2019-06-04T15:16:39.066] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:16:39.069] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 5ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:16:39.087] [INFO] default - app.all >> get token:   
+[2019-06-04T15:16:39.087] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:16:39.091] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzIwOTQsImlhdCI6MTU1OTYzMjA4OX0.sMe0YTv2CNTrqlfd53agMwKTbKUs7DJsPH8IWfDpzZI
+[2019-06-04T15:16:39.093] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:16:39.096] [INFO] default - [::1 OPTIONS /api/account/recordList 200 9ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:16:39.097] [INFO] default - [::1 POST /api/account/userMonthAccount 200 7ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:16:39.104] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzIwOTQsImlhdCI6MTU1OTYzMjA4OX0.sMe0YTv2CNTrqlfd53agMwKTbKUs7DJsPH8IWfDpzZI
+[2019-06-04T15:16:39.107] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:16:39.110] [INFO] default - [::1 POST /api/account/recordList 200 5ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:17:20.619] [INFO] default - app.all >> get token:   
+[2019-06-04T15:17:20.620] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:17:20.622] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 3ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:17:20.632] [INFO] default - app.all >> get token:   
+[2019-06-04T15:17:20.634] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:17:20.636] [INFO] default - [::1 OPTIONS /api/account/recordList 200 4ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:17:20.639] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzIwOTQsImlhdCI6MTU1OTYzMjA4OX0.sMe0YTv2CNTrqlfd53agMwKTbKUs7DJsPH8IWfDpzZI
+[2019-06-04T15:17:20.643] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:17:20.644] [INFO] default - [::1 POST /api/account/userMonthAccount 200 5ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:17:20.646] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzIwOTQsImlhdCI6MTU1OTYzMjA4OX0.sMe0YTv2CNTrqlfd53agMwKTbKUs7DJsPH8IWfDpzZI
+[2019-06-04T15:17:20.647] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:17:20.648] [INFO] default - [::1 POST /api/account/recordList 200 3ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:19:03.363] [INFO] default - app.all >> get token:   
+[2019-06-04T15:19:03.365] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:19:03.366] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 3ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:19:03.369] [INFO] default - app.all >> get token:   
+[2019-06-04T15:19:03.369] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:19:03.370] [INFO] default - [::1 OPTIONS /api/account/recordList 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:19:03.382] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzIwOTQsImlhdCI6MTU1OTYzMjA4OX0.sMe0YTv2CNTrqlfd53agMwKTbKUs7DJsPH8IWfDpzZI
+[2019-06-04T15:19:03.390] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:19:03.394] [INFO] default - [::1 POST /api/account/userMonthAccount 200 12ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:19:03.396] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzIwOTQsImlhdCI6MTU1OTYzMjA4OX0.sMe0YTv2CNTrqlfd53agMwKTbKUs7DJsPH8IWfDpzZI
+[2019-06-04T15:19:03.397] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:19:03.399] [INFO] default - [::1 POST /api/account/recordList 200 3ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:19:36.002] [INFO] default - app.all >> get token:   
+[2019-06-04T15:19:36.003] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:19:36.004] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:19:36.007] [INFO] default - app.all >> get token:   
+[2019-06-04T15:19:36.009] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:19:36.012] [INFO] default - [::1 OPTIONS /api/account/recordList 200 5ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:19:36.036] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzIwOTQsImlhdCI6MTU1OTYzMjA4OX0.sMe0YTv2CNTrqlfd53agMwKTbKUs7DJsPH8IWfDpzZI
+[2019-06-04T15:19:36.054] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:19:36.056] [INFO] default - [::1 POST /api/account/userMonthAccount 200 20ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:19:36.059] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzIwOTQsImlhdCI6MTU1OTYzMjA4OX0.sMe0YTv2CNTrqlfd53agMwKTbKUs7DJsPH8IWfDpzZI
+[2019-06-04T15:19:36.061] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:19:36.064] [INFO] default - [::1 POST /api/account/recordList 200 6ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:22:00.085] [INFO] default - app.all >> get token:   
+[2019-06-04T15:22:00.102] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:22:00.104] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 18ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:22:00.105] [INFO] default - app.all >> get token:   
+[2019-06-04T15:22:00.106] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:22:00.107] [INFO] default - [::1 OPTIONS /api/account/recordList 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:22:00.114] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzIwOTQsImlhdCI6MTU1OTYzMjA4OX0.sMe0YTv2CNTrqlfd53agMwKTbKUs7DJsPH8IWfDpzZI
+[2019-06-04T15:22:00.115] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:22:00.116] [INFO] default - [::1 POST /api/account/userMonthAccount 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:22:00.117] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzIwOTQsImlhdCI6MTU1OTYzMjA4OX0.sMe0YTv2CNTrqlfd53agMwKTbKUs7DJsPH8IWfDpzZI
+[2019-06-04T15:22:00.118] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:22:00.120] [INFO] default - [::1 POST /api/account/recordList 200 3ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:22:50.037] [INFO] default - app.all >> get token:   
+[2019-06-04T15:22:50.038] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:22:50.042] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 4ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:22:50.043] [INFO] default - app.all >> get token:   
+[2019-06-04T15:22:50.045] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:22:50.046] [INFO] default - [::1 OPTIONS /api/account/recordList 200 3ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:22:50.091] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzIwOTQsImlhdCI6MTU1OTYzMjA4OX0.sMe0YTv2CNTrqlfd53agMwKTbKUs7DJsPH8IWfDpzZI
+[2019-06-04T15:22:50.092] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:22:50.094] [INFO] default - [::1 POST /api/account/userMonthAccount 200 4ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:22:50.137] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzIwOTQsImlhdCI6MTU1OTYzMjA4OX0.sMe0YTv2CNTrqlfd53agMwKTbKUs7DJsPH8IWfDpzZI
+[2019-06-04T15:22:50.138] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:22:50.139] [INFO] default - [::1 POST /api/account/recordList 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:23:01.530] [INFO] default - [::1 OPTIONS /api/user/login 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:23:01.539] [INFO] default - "/login" >> 登录成功, token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzI5ODYsImlhdCI6MTU1OTYzMjk4MX0.nMtDY8Cnr2IuW_fzI2E8oLjOEWN91ZAnAAcFRZLMChw
+[2019-06-04T15:23:01.544] [INFO] default - [::1 POST /api/user/login 200 9ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:23:01.658] [INFO] default - app.all >> get token:   
+[2019-06-04T15:23:01.664] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:23:01.667] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 8ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:23:01.669] [INFO] default - app.all >> get token:   
+[2019-06-04T15:23:01.670] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:23:01.672] [INFO] default - [::1 OPTIONS /api/account/recordList 200 3ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:23:01.714] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzI5ODYsImlhdCI6MTU1OTYzMjk4MX0.nMtDY8Cnr2IuW_fzI2E8oLjOEWN91ZAnAAcFRZLMChw
+[2019-06-04T15:23:01.716] [INFO] default - app.all >> token result:   { uid: '5cdd4676c206cf27f029e599', username: 'Atao' }
+[2019-06-04T15:23:01.719] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzI5ODYsImlhdCI6MTU1OTYzMjk4MX0.nMtDY8Cnr2IuW_fzI2E8oLjOEWN91ZAnAAcFRZLMChw
+[2019-06-04T15:23:01.720] [INFO] default - app.all >> token result:   { uid: '5cdd4676c206cf27f029e599', username: 'Atao' }
+[2019-06-04T15:23:01.721] [INFO] default - 查询所有记录 /recordList
+[2019-06-04T15:23:01.721] [INFO] default - 查询所有记录 token uid 5cdd4676c206cf27f029e599
+[2019-06-04T15:23:01.725] [INFO] default - [::1 POST /api/account/userMonthAccount 200 11ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:23:01.730] [INFO] default - [::1 POST /api/account/recordList 200 12ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:23:04.485] [INFO] default - app.all >> get token:   
+[2019-06-04T15:23:04.486] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:23:04.488] [INFO] default - [::1 OPTIONS /api/useType/expCostTypes 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:23:04.535] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzI5ODYsImlhdCI6MTU1OTYzMjk4MX0.nMtDY8Cnr2IuW_fzI2E8oLjOEWN91ZAnAAcFRZLMChw
+[2019-06-04T15:23:04.536] [INFO] default - app.all >> token result:   { uid: '5cdd4676c206cf27f029e599', username: 'Atao' }
+[2019-06-04T15:23:04.546] [INFO] default - [::1 GET /api/useType/expCostTypes 500 11ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:23:29.544] [INFO] default - app.all >> get token:   
+[2019-06-04T15:23:29.545] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:23:29.546] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:23:29.547] [INFO] default - app.all >> get token:   
+[2019-06-04T15:23:29.548] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:23:29.549] [INFO] default - [::1 OPTIONS /api/account/recordList 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:23:29.581] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzI5ODYsImlhdCI6MTU1OTYzMjk4MX0.nMtDY8Cnr2IuW_fzI2E8oLjOEWN91ZAnAAcFRZLMChw
+[2019-06-04T15:23:29.590] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:23:29.594] [INFO] default - [::1 POST /api/account/userMonthAccount 200 13ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:23:29.597] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzI5ODYsImlhdCI6MTU1OTYzMjk4MX0.nMtDY8Cnr2IuW_fzI2E8oLjOEWN91ZAnAAcFRZLMChw
+[2019-06-04T15:23:29.599] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:23:29.603] [INFO] default - [::1 POST /api/account/recordList 200 6ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:26:49.652] [INFO] default - [::1 OPTIONS /api/user/login 200 1ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:26:49.663] [INFO] default - "/login" >> 登录成功, token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzMyMTQsImlhdCI6MTU1OTYzMzIwOX0.xNYK2lauW0NtBObwVLj5GumOO4j1AgOLEhWhVXheZII
+[2019-06-04T15:26:49.667] [INFO] default - [::1 POST /api/user/login 200 6ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:26:49.781] [INFO] default - app.all >> get token:   
+[2019-06-04T15:26:49.781] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:26:49.783] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 3ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:26:49.785] [INFO] default - app.all >> get token:   
+[2019-06-04T15:26:49.786] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:26:49.787] [INFO] default - [::1 OPTIONS /api/account/recordList 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:26:49.804] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzMyMTQsImlhdCI6MTU1OTYzMzIwOX0.xNYK2lauW0NtBObwVLj5GumOO4j1AgOLEhWhVXheZII
+[2019-06-04T15:26:49.806] [INFO] default - app.all >> token result:   { uid: '5cdd4676c206cf27f029e599', username: 'Atao' }
+[2019-06-04T15:26:49.808] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzMyMTQsImlhdCI6MTU1OTYzMzIwOX0.xNYK2lauW0NtBObwVLj5GumOO4j1AgOLEhWhVXheZII
+[2019-06-04T15:26:49.810] [INFO] default - app.all >> token result:   { uid: '5cdd4676c206cf27f029e599', username: 'Atao' }
+[2019-06-04T15:26:49.810] [INFO] default - 查询所有记录 /recordList
+[2019-06-04T15:26:49.810] [INFO] default - 查询所有记录 token uid 5cdd4676c206cf27f029e599
+[2019-06-04T15:26:49.815] [INFO] default - [::1 POST /api/account/userMonthAccount 200 11ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:26:49.817] [INFO] default - [::1 POST /api/account/recordList 200 9ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:27:02.810] [INFO] default - app.all >> get token:   
+[2019-06-04T15:27:02.811] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:27:02.812] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:27:02.815] [INFO] default - app.all >> get token:   
+[2019-06-04T15:27:02.816] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:27:02.817] [INFO] default - [::1 OPTIONS /api/account/recordList 200 1ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:27:02.841] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzMyMTQsImlhdCI6MTU1OTYzMzIwOX0.xNYK2lauW0NtBObwVLj5GumOO4j1AgOLEhWhVXheZII
+[2019-06-04T15:27:02.844] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:27:02.853] [INFO] default - [::1 POST /api/account/userMonthAccount 200 13ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:27:02.858] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzMyMTQsImlhdCI6MTU1OTYzMzIwOX0.xNYK2lauW0NtBObwVLj5GumOO4j1AgOLEhWhVXheZII
+[2019-06-04T15:27:02.874] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:27:02.876] [INFO] default - [::1 POST /api/account/recordList 200 18ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:27:10.957] [INFO] default - app.all >> get token:   
+[2019-06-04T15:27:10.961] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:27:10.962] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 5ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:27:10.965] [INFO] default - app.all >> get token:   
+[2019-06-04T15:27:10.967] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:27:10.968] [INFO] default - [::1 OPTIONS /api/account/recordList 200 3ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:27:10.991] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzMyMTQsImlhdCI6MTU1OTYzMzIwOX0.xNYK2lauW0NtBObwVLj5GumOO4j1AgOLEhWhVXheZII
+[2019-06-04T15:27:11.000] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:27:11.002] [INFO] default - [::1 POST /api/account/userMonthAccount 200 12ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:27:11.003] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzMyMTQsImlhdCI6MTU1OTYzMzIwOX0.xNYK2lauW0NtBObwVLj5GumOO4j1AgOLEhWhVXheZII
+[2019-06-04T15:27:11.004] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:27:11.012] [INFO] default - [::1 POST /api/account/recordList 200 9ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:27:37.504] [INFO] default - app.all >> get token:   
+[2019-06-04T15:27:37.505] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:27:37.506] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:27:37.508] [INFO] default - app.all >> get token:   
+[2019-06-04T15:27:37.511] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:27:37.512] [INFO] default - [::1 OPTIONS /api/account/recordList 200 4ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:27:37.523] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzMyMTQsImlhdCI6MTU1OTYzMzIwOX0.xNYK2lauW0NtBObwVLj5GumOO4j1AgOLEhWhVXheZII
+[2019-06-04T15:27:37.526] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:27:37.536] [INFO] default - [::1 POST /api/account/userMonthAccount 200 14ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:27:37.558] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzMyMTQsImlhdCI6MTU1OTYzMzIwOX0.xNYK2lauW0NtBObwVLj5GumOO4j1AgOLEhWhVXheZII
+[2019-06-04T15:27:37.559] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:27:37.560] [INFO] default - [::1 POST /api/account/recordList 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:27:41.811] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzMyMTQsImlhdCI6MTU1OTYzMzIwOX0.xNYK2lauW0NtBObwVLj5GumOO4j1AgOLEhWhVXheZII
+[2019-06-04T15:27:41.819] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:27:41.827] [INFO] default - [::1 POST /api/account/userMonthAccount 200 16ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:27:41.830] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzMyMTQsImlhdCI6MTU1OTYzMzIwOX0.xNYK2lauW0NtBObwVLj5GumOO4j1AgOLEhWhVXheZII
+[2019-06-04T15:27:41.831] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:27:41.832] [INFO] default - [::1 POST /api/account/recordList 200 1ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:27:57.639] [INFO] default - app.all >> get token:   
+[2019-06-04T15:27:57.641] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:27:57.642] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 3ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:27:57.644] [INFO] default - app.all >> get token:   
+[2019-06-04T15:27:57.645] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:27:57.646] [INFO] default - [::1 OPTIONS /api/account/recordList 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:27:57.676] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzMyMTQsImlhdCI6MTU1OTYzMzIwOX0.xNYK2lauW0NtBObwVLj5GumOO4j1AgOLEhWhVXheZII
+[2019-06-04T15:27:57.677] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:27:57.683] [INFO] default - [::1 POST /api/account/userMonthAccount 200 8ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:27:57.685] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzMyMTQsImlhdCI6MTU1OTYzMzIwOX0.xNYK2lauW0NtBObwVLj5GumOO4j1AgOLEhWhVXheZII
+[2019-06-04T15:27:57.686] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:27:57.687] [INFO] default - [::1 POST /api/account/recordList 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:27:59.457] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzMyMTQsImlhdCI6MTU1OTYzMzIwOX0.xNYK2lauW0NtBObwVLj5GumOO4j1AgOLEhWhVXheZII
+[2019-06-04T15:27:59.458] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:27:59.460] [INFO] default - [::1 POST /api/account/userMonthAccount 200 4ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:27:59.463] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzMyMTQsImlhdCI6MTU1OTYzMzIwOX0.xNYK2lauW0NtBObwVLj5GumOO4j1AgOLEhWhVXheZII
+[2019-06-04T15:27:59.466] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:27:59.467] [INFO] default - [::1 POST /api/account/recordList 200 3ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:31:38.871] [INFO] default - app.all >> get token:   
+[2019-06-04T15:31:38.873] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:31:38.884] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 14ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:31:38.890] [INFO] default - app.all >> get token:   
+[2019-06-04T15:31:38.891] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:31:38.892] [INFO] default - [::1 OPTIONS /api/account/recordList 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:31:38.955] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzMyMTQsImlhdCI6MTU1OTYzMzIwOX0.xNYK2lauW0NtBObwVLj5GumOO4j1AgOLEhWhVXheZII
+[2019-06-04T15:31:38.960] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:31:38.963] [INFO] default - [::1 POST /api/account/userMonthAccount 200 22ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:31:38.965] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzMyMTQsImlhdCI6MTU1OTYzMzIwOX0.xNYK2lauW0NtBObwVLj5GumOO4j1AgOLEhWhVXheZII
+[2019-06-04T15:31:38.965] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:31:38.968] [INFO] default - [::1 POST /api/account/recordList 200 4ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:32:43.720] [INFO] default - [::1 OPTIONS /api/user/login 200 4ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:32:43.761] [INFO] default - "/login" >> 登录成功, token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzM1NjgsImlhdCI6MTU1OTYzMzU2M30.Z-Nclddg1WNHy-AdtEhlvSTO3obt0hlcYfCzsmh_hpc
+[2019-06-04T15:32:43.763] [INFO] default - [::1 POST /api/user/login 200 35ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:32:43.889] [INFO] default - app.all >> get token:   
+[2019-06-04T15:32:43.889] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:32:43.891] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 3ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:32:43.892] [INFO] default - app.all >> get token:   
+[2019-06-04T15:32:43.892] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:32:43.893] [INFO] default - [::1 OPTIONS /api/account/recordList 200 1ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:32:43.930] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzM1NjgsImlhdCI6MTU1OTYzMzU2M30.Z-Nclddg1WNHy-AdtEhlvSTO3obt0hlcYfCzsmh_hpc
+[2019-06-04T15:32:43.932] [INFO] default - app.all >> token result:   { uid: '5cdd4676c206cf27f029e599', username: 'Atao' }
+[2019-06-04T15:32:43.936] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzM1NjgsImlhdCI6MTU1OTYzMzU2M30.Z-Nclddg1WNHy-AdtEhlvSTO3obt0hlcYfCzsmh_hpc
+[2019-06-04T15:32:43.937] [INFO] default - app.all >> token result:   { uid: '5cdd4676c206cf27f029e599', username: 'Atao' }
+[2019-06-04T15:32:43.938] [INFO] default - 查询所有记录 /recordList
+[2019-06-04T15:32:43.938] [INFO] default - 查询所有记录 token uid 5cdd4676c206cf27f029e599
+[2019-06-04T15:32:43.945] [INFO] default - [::1 POST /api/account/userMonthAccount 200 15ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:32:44.970] [INFO] default - [::1 POST /api/account/recordList 200 1034ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:32:55.325] [INFO] default - app.all >> get token:   
+[2019-06-04T15:32:55.325] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:32:55.326] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 1ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:32:55.328] [INFO] default - app.all >> get token:   
+[2019-06-04T15:32:55.329] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:32:55.330] [INFO] default - [::1 OPTIONS /api/account/recordList 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:32:55.354] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzM1NjgsImlhdCI6MTU1OTYzMzU2M30.Z-Nclddg1WNHy-AdtEhlvSTO3obt0hlcYfCzsmh_hpc
+[2019-06-04T15:32:55.359] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:32:55.370] [INFO] default - [::1 POST /api/account/userMonthAccount 200 16ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:32:55.375] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzM1NjgsImlhdCI6MTU1OTYzMzU2M30.Z-Nclddg1WNHy-AdtEhlvSTO3obt0hlcYfCzsmh_hpc
+[2019-06-04T15:32:55.376] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:32:55.377] [INFO] default - [::1 POST /api/account/recordList 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:43:32.271] [INFO] default - app.all >> get token:   
+[2019-06-04T15:43:32.277] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:43:32.286] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 17ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:43:32.289] [INFO] default - app.all >> get token:   
+[2019-06-04T15:43:32.291] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:43:32.293] [INFO] default - [::1 OPTIONS /api/account/recordList 200 4ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:43:32.320] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzM1NjgsImlhdCI6MTU1OTYzMzU2M30.Z-Nclddg1WNHy-AdtEhlvSTO3obt0hlcYfCzsmh_hpc
+[2019-06-04T15:43:32.326] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:43:32.327] [INFO] default - [::1 POST /api/account/userMonthAccount 200 27ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:43:32.329] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzM1NjgsImlhdCI6MTU1OTYzMzU2M30.Z-Nclddg1WNHy-AdtEhlvSTO3obt0hlcYfCzsmh_hpc
+[2019-06-04T15:43:32.331] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:43:32.333] [INFO] default - [::1 POST /api/account/recordList 200 5ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:44:10.589] [INFO] default - [::1 OPTIONS /api/user/login 200 4ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:44:10.621] [INFO] default - "/login" >> 登录成功, token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzQyNTUsImlhdCI6MTU1OTYzNDI1MH0.sklU-7SRkTMxIoXOA9qDpzE6jWqlhjXLDbVxaRoL3H0
+[2019-06-04T15:44:10.623] [INFO] default - [::1 POST /api/user/login 200 28ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:44:10.783] [INFO] default - app.all >> get token:   
+[2019-06-04T15:44:10.787] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:44:10.790] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 7ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:44:10.791] [INFO] default - app.all >> get token:   
+[2019-06-04T15:44:10.793] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:44:10.795] [INFO] default - [::1 OPTIONS /api/account/recordList 200 4ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:44:10.812] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzQyNTUsImlhdCI6MTU1OTYzNDI1MH0.sklU-7SRkTMxIoXOA9qDpzE6jWqlhjXLDbVxaRoL3H0
+[2019-06-04T15:44:10.813] [INFO] default - app.all >> token result:   { uid: '5cdd4676c206cf27f029e599', username: 'Atao' }
+[2019-06-04T15:44:10.817] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzQyNTUsImlhdCI6MTU1OTYzNDI1MH0.sklU-7SRkTMxIoXOA9qDpzE6jWqlhjXLDbVxaRoL3H0
+[2019-06-04T15:44:10.818] [INFO] default - app.all >> token result:   { uid: '5cdd4676c206cf27f029e599', username: 'Atao' }
+[2019-06-04T15:44:10.819] [INFO] default - 查询所有记录 /recordList
+[2019-06-04T15:44:10.819] [INFO] default - 查询所有记录 token uid 5cdd4676c206cf27f029e599
+[2019-06-04T15:44:10.826] [INFO] default - [::1 POST /api/account/userMonthAccount 200 15ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:44:11.836] [INFO] default - [::1 POST /api/account/recordList 200 1019ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:44:17.032] [INFO] default - app.all >> get token:   
+[2019-06-04T15:44:17.036] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:44:17.037] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 6ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:44:17.041] [INFO] default - app.all >> get token:   
+[2019-06-04T15:44:17.043] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:44:17.044] [INFO] default - [::1 OPTIONS /api/account/recordList 200 3ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:44:17.072] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzQyNTUsImlhdCI6MTU1OTYzNDI1MH0.sklU-7SRkTMxIoXOA9qDpzE6jWqlhjXLDbVxaRoL3H0
+[2019-06-04T15:44:17.079] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:44:17.080] [INFO] default - [::1 POST /api/account/userMonthAccount 200 9ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:44:17.081] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzQyNTUsImlhdCI6MTU1OTYzNDI1MH0.sklU-7SRkTMxIoXOA9qDpzE6jWqlhjXLDbVxaRoL3H0
+[2019-06-04T15:44:17.095] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:44:17.097] [INFO] default - [::1 POST /api/account/recordList 200 15ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:45:48.147] [INFO] default - app.all >> get token:   
+[2019-06-04T15:45:48.150] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:45:48.162] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 17ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:45:48.164] [INFO] default - app.all >> get token:   
+[2019-06-04T15:45:48.164] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:45:48.166] [INFO] default - [::1 OPTIONS /api/account/recordList 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:45:48.199] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzQyNTUsImlhdCI6MTU1OTYzNDI1MH0.sklU-7SRkTMxIoXOA9qDpzE6jWqlhjXLDbVxaRoL3H0
+[2019-06-04T15:45:48.207] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:45:48.209] [INFO] default - [::1 POST /api/account/userMonthAccount 200 29ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:45:48.211] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzQyNTUsImlhdCI6MTU1OTYzNDI1MH0.sklU-7SRkTMxIoXOA9qDpzE6jWqlhjXLDbVxaRoL3H0
+[2019-06-04T15:45:48.212] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:45:48.213] [INFO] default - [::1 POST /api/account/recordList 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:46:26.736] [INFO] default - app.all >> get token:   
+[2019-06-04T15:46:26.742] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:46:26.754] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 20ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:46:26.776] [INFO] default - app.all >> get token:   
+[2019-06-04T15:46:26.791] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:46:26.794] [INFO] default - [::1 OPTIONS /api/account/recordList 200 17ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:46:26.824] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzQyNTUsImlhdCI6MTU1OTYzNDI1MH0.sklU-7SRkTMxIoXOA9qDpzE6jWqlhjXLDbVxaRoL3H0
+[2019-06-04T15:46:26.829] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:46:26.831] [INFO] default - [::1 POST /api/account/userMonthAccount 200 28ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:46:26.834] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzQyNTUsImlhdCI6MTU1OTYzNDI1MH0.sklU-7SRkTMxIoXOA9qDpzE6jWqlhjXLDbVxaRoL3H0
+[2019-06-04T15:46:26.838] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:46:26.839] [INFO] default - [::1 POST /api/account/recordList 200 6ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:46:45.915] [INFO] default - app.all >> get token:   
+[2019-06-04T15:46:45.922] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:46:45.930] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 16ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:46:45.937] [INFO] default - app.all >> get token:   
+[2019-06-04T15:46:45.939] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:46:45.940] [INFO] default - [::1 OPTIONS /api/account/recordList 200 4ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:46:45.966] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzQyNTUsImlhdCI6MTU1OTYzNDI1MH0.sklU-7SRkTMxIoXOA9qDpzE6jWqlhjXLDbVxaRoL3H0
+[2019-06-04T15:46:45.971] [INFO] default - app.all >> token result:   expired
+[2019-06-04T15:46:45.973] [INFO] default - [::1 POST /api/account/userMonthAccount 200 26ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:46:45.974] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzQyNTUsImlhdCI6MTU1OTYzNDI1MH0.sklU-7SRkTMxIoXOA9qDpzE6jWqlhjXLDbVxaRoL3H0
+[2019-06-04T15:46:45.985] [INFO] default - app.all >> token result:   expired
+[2019-06-04T15:46:45.987] [INFO] default - [::1 POST /api/account/recordList 200 14ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:47:35.929] [INFO] default - app.all >> get token:   
+[2019-06-04T15:47:35.931] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:47:35.933] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 5ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:47:35.935] [INFO] default - app.all >> get token:   
+[2019-06-04T15:47:35.937] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:47:35.939] [INFO] default - [::1 OPTIONS /api/account/recordList 200 3ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:47:35.946] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzQyNTUsImlhdCI6MTU1OTYzNDI1MH0.sklU-7SRkTMxIoXOA9qDpzE6jWqlhjXLDbVxaRoL3H0
+[2019-06-04T15:47:35.956] [INFO] default - app.all >> token result:   expired
+[2019-06-04T15:47:35.959] [INFO] default - [::1 POST /api/account/userMonthAccount 200 14ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:47:35.962] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzQyNTUsImlhdCI6MTU1OTYzNDI1MH0.sklU-7SRkTMxIoXOA9qDpzE6jWqlhjXLDbVxaRoL3H0
+[2019-06-04T15:47:35.974] [INFO] default - app.all >> token result:   expired
+[2019-06-04T15:47:35.975] [INFO] default - [::1 POST /api/account/recordList 200 14ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:47:39.428] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzQyNTUsImlhdCI6MTU1OTYzNDI1MH0.sklU-7SRkTMxIoXOA9qDpzE6jWqlhjXLDbVxaRoL3H0
+[2019-06-04T15:47:39.433] [INFO] default - app.all >> token result:   expired
+[2019-06-04T15:47:39.435] [INFO] default - [::1 POST /api/account/userMonthAccount 200 7ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:47:39.436] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzQyNTUsImlhdCI6MTU1OTYzNDI1MH0.sklU-7SRkTMxIoXOA9qDpzE6jWqlhjXLDbVxaRoL3H0
+[2019-06-04T15:47:39.439] [INFO] default - app.all >> token result:   expired
+[2019-06-04T15:47:39.440] [INFO] default - [::1 POST /api/account/recordList 200 3ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:48:25.152] [INFO] default - [::1 OPTIONS /api/user/login 200 17ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:48:25.186] [INFO] default - "/login" >> 登录成功, token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzU0MDUsImlhdCI6MTU1OTYzNDUwNX0.EFo8lTEpaYNRxVsGEQWZG_avq9vs3NtLYxKMG5krYWo
+[2019-06-04T15:48:25.189] [INFO] default - [::1 POST /api/user/login 200 33ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:48:25.302] [INFO] default - app.all >> get token:   
+[2019-06-04T15:48:25.314] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:48:25.316] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 14ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:48:25.320] [INFO] default - app.all >> get token:   
+[2019-06-04T15:48:25.322] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:48:25.335] [INFO] default - [::1 OPTIONS /api/account/recordList 200 15ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:48:25.339] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzU0MDUsImlhdCI6MTU1OTYzNDUwNX0.EFo8lTEpaYNRxVsGEQWZG_avq9vs3NtLYxKMG5krYWo
+[2019-06-04T15:48:25.347] [INFO] default - app.all >> token result:   { uid: '5cdd4676c206cf27f029e599', username: 'Atao' }
+[2019-06-04T15:48:25.352] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzU0MDUsImlhdCI6MTU1OTYzNDUwNX0.EFo8lTEpaYNRxVsGEQWZG_avq9vs3NtLYxKMG5krYWo
+[2019-06-04T15:48:25.353] [INFO] default - app.all >> token result:   { uid: '5cdd4676c206cf27f029e599', username: 'Atao' }
+[2019-06-04T15:48:25.354] [INFO] default - 查询所有记录 /recordList
+[2019-06-04T15:48:25.354] [INFO] default - 查询所有记录 token uid 5cdd4676c206cf27f029e599
+[2019-06-04T15:48:25.364] [INFO] default - [::1 POST /api/account/userMonthAccount 200 26ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:48:26.435] [INFO] default - [::1 POST /api/account/recordList 200 1083ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:50:08.616] [INFO] default - app.all >> get token:   
+[2019-06-04T15:50:08.623] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:50:08.624] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 8ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:50:08.627] [INFO] default - app.all >> get token:   
+[2019-06-04T15:50:08.631] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:50:08.633] [INFO] default - [::1 OPTIONS /api/account/recordList 200 6ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:50:08.647] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzU0MDUsImlhdCI6MTU1OTYzNDUwNX0.EFo8lTEpaYNRxVsGEQWZG_avq9vs3NtLYxKMG5krYWo
+[2019-06-04T15:50:08.650] [INFO] default - app.all >> token result:   { uid: '5cdd4676c206cf27f029e599', username: 'Atao' }
+[2019-06-04T15:50:08.661] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzU0MDUsImlhdCI6MTU1OTYzNDUwNX0.EFo8lTEpaYNRxVsGEQWZG_avq9vs3NtLYxKMG5krYWo
+[2019-06-04T15:50:08.665] [INFO] default - app.all >> token result:   { uid: '5cdd4676c206cf27f029e599', username: 'Atao' }
+[2019-06-04T15:50:08.667] [INFO] default - 查询所有记录 /recordList
+[2019-06-04T15:50:08.668] [INFO] default - 查询所有记录 token uid 5cdd4676c206cf27f029e599
+[2019-06-04T15:50:08.672] [INFO] default - [::1 POST /api/account/userMonthAccount 200 26ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:50:08.673] [INFO] default - [::1 POST /api/account/recordList 200 13ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:59:04.742] [INFO] default - app.all >> get token:   
+[2019-06-04T15:59:04.749] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:59:04.750] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 8ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:59:04.751] [INFO] default - app.all >> get token:   
+[2019-06-04T15:59:04.752] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:59:04.753] [INFO] default - [::1 OPTIONS /api/account/recordList 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:59:04.786] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzU0MDUsImlhdCI6MTU1OTYzNDUwNX0.EFo8lTEpaYNRxVsGEQWZG_avq9vs3NtLYxKMG5krYWo
+[2019-06-04T15:59:04.787] [INFO] default - app.all >> token result:   { uid: '5cdd4676c206cf27f029e599', username: 'Atao' }
+[2019-06-04T15:59:04.794] [INFO] default - [::1 POST /api/account/userMonthAccount 200 9ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:59:04.799] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzU0MDUsImlhdCI6MTU1OTYzNDUwNX0.EFo8lTEpaYNRxVsGEQWZG_avq9vs3NtLYxKMG5krYWo
+[2019-06-04T15:59:04.812] [INFO] default - app.all >> token result:   { uid: '5cdd4676c206cf27f029e599', username: 'Atao' }
+[2019-06-04T15:59:04.820] [INFO] default - 查询所有记录 /recordList
+[2019-06-04T15:59:04.820] [INFO] default - 查询所有记录 token uid 5cdd4676c206cf27f029e599
+[2019-06-04T15:59:04.826] [INFO] default - [::1 POST /api/account/recordList 200 27ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:59:13.773] [INFO] default - app.all >> get token:   
+[2019-06-04T15:59:13.775] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:59:13.783] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 12ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:59:13.795] [INFO] default - app.all >> get token:   
+[2019-06-04T15:59:13.795] [INFO] default - app.all >> token result:   err
+[2019-06-04T15:59:13.797] [INFO] default - [::1 OPTIONS /api/account/recordList 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:59:13.870] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzU0MDUsImlhdCI6MTU1OTYzNDUwNX0.EFo8lTEpaYNRxVsGEQWZG_avq9vs3NtLYxKMG5krYWo
+[2019-06-04T15:59:13.873] [INFO] default - app.all >> token result:   { uid: '5cdd4676c206cf27f029e599', username: 'Atao' }
+[2019-06-04T15:59:13.904] [INFO] default - [::1 POST /api/account/userMonthAccount 200 52ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T15:59:13.917] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzU0MDUsImlhdCI6MTU1OTYzNDUwNX0.EFo8lTEpaYNRxVsGEQWZG_avq9vs3NtLYxKMG5krYWo
+[2019-06-04T15:59:13.918] [INFO] default - app.all >> token result:   { uid: '5cdd4676c206cf27f029e599', username: 'Atao' }
+[2019-06-04T15:59:13.918] [INFO] default - 查询所有记录 /recordList
+[2019-06-04T15:59:13.919] [INFO] default - 查询所有记录 token uid 5cdd4676c206cf27f029e599
+[2019-06-04T15:59:13.925] [INFO] default - [::1 POST /api/account/recordList 200 9ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T17:27:19.762] [INFO] default - app.all >> get token:   
+[2019-06-04T17:27:19.765] [INFO] default - app.all >> token result:   err
+[2019-06-04T17:27:19.773] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 12ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T17:27:19.777] [INFO] default - app.all >> get token:   
+[2019-06-04T17:27:19.778] [INFO] default - app.all >> token result:   err
+[2019-06-04T17:27:19.779] [INFO] default - [::1 OPTIONS /api/account/recordList 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T17:27:19.808] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzU0MDUsImlhdCI6MTU1OTYzNDUwNX0.EFo8lTEpaYNRxVsGEQWZG_avq9vs3NtLYxKMG5krYWo
+[2019-06-04T17:27:19.810] [INFO] default - app.all >> token result:   expired
+[2019-06-04T17:27:19.811] [INFO] default - [::1 POST /api/account/userMonthAccount 200 18ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T17:27:19.812] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2MzU0MDUsImlhdCI6MTU1OTYzNDUwNX0.EFo8lTEpaYNRxVsGEQWZG_avq9vs3NtLYxKMG5krYWo
+[2019-06-04T17:27:19.813] [INFO] default - app.all >> token result:   expired
+[2019-06-04T17:27:19.815] [INFO] default - [::1 POST /api/account/recordList 200 3ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T17:27:32.225] [INFO] default - [::1 OPTIONS /api/user/login 200 4ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T17:27:32.519] [INFO] default - "/login" >> 登录成功, token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2NDEzNTIsImlhdCI6MTU1OTY0MDQ1Mn0.dlZTcXdZTRNDAED9BUtJEgysC0iiOM6fCrRizyNBZEw
+[2019-06-04T17:27:32.522] [INFO] default - [::1 POST /api/user/login 200 291ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T17:27:32.655] [INFO] default - app.all >> get token:   
+[2019-06-04T17:27:32.657] [INFO] default - app.all >> token result:   err
+[2019-06-04T17:27:32.659] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 4ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T17:27:32.662] [INFO] default - app.all >> get token:   
+[2019-06-04T17:27:32.663] [INFO] default - app.all >> token result:   err
+[2019-06-04T17:27:32.665] [INFO] default - [::1 OPTIONS /api/account/recordList 200 3ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T17:27:32.684] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2NDEzNTIsImlhdCI6MTU1OTY0MDQ1Mn0.dlZTcXdZTRNDAED9BUtJEgysC0iiOM6fCrRizyNBZEw
+[2019-06-04T17:27:32.685] [INFO] default - app.all >> token result:   { uid: '5cdd4676c206cf27f029e599', username: 'Atao' }
+[2019-06-04T17:27:32.691] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2NDEzNTIsImlhdCI6MTU1OTY0MDQ1Mn0.dlZTcXdZTRNDAED9BUtJEgysC0iiOM6fCrRizyNBZEw
+[2019-06-04T17:27:32.692] [INFO] default - app.all >> token result:   { uid: '5cdd4676c206cf27f029e599', username: 'Atao' }
+[2019-06-04T17:27:32.717] [INFO] default - [::1 POST /api/account/userMonthAccount 200 34ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T17:27:33.726] [INFO] default - [::1 POST /api/account/recordList 200 1036ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T17:27:43.187] [INFO] default - app.all >> get token:   
+[2019-06-04T17:27:43.187] [INFO] default - app.all >> token result:   err
+[2019-06-04T17:27:43.189] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T17:27:43.193] [INFO] default - app.all >> get token:   
+[2019-06-04T17:27:43.194] [INFO] default - app.all >> token result:   err
+[2019-06-04T17:27:43.195] [INFO] default - [::1 OPTIONS /api/account/recordList 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T17:27:43.226] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2NDEzNTIsImlhdCI6MTU1OTY0MDQ1Mn0.dlZTcXdZTRNDAED9BUtJEgysC0iiOM6fCrRizyNBZEw
+[2019-06-04T17:27:43.229] [INFO] default - app.all >> token result:   { uid: '5cdd4676c206cf27f029e599', username: 'Atao' }
+[2019-06-04T17:27:43.239] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2NDEzNTIsImlhdCI6MTU1OTY0MDQ1Mn0.dlZTcXdZTRNDAED9BUtJEgysC0iiOM6fCrRizyNBZEw
+[2019-06-04T17:27:43.240] [INFO] default - app.all >> token result:   { uid: '5cdd4676c206cf27f029e599', username: 'Atao' }
+[2019-06-04T17:27:43.243] [INFO] default - [::1 POST /api/account/userMonthAccount 200 17ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T17:27:43.246] [INFO] default - [::1 POST /api/account/recordList 200 8ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T17:30:24.960] [INFO] default - app.all >> get token:   
+[2019-06-04T17:30:24.962] [INFO] default - app.all >> token result:   err
+[2019-06-04T17:30:24.969] [INFO] default - app.all >> get token:   
+[2019-06-04T17:30:24.969] [INFO] default - app.all >> token result:   err
+[2019-06-04T17:33:59.588] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 8ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T17:33:59.594] [INFO] default - [::1 OPTIONS /api/account/recordList 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T17:33:59.618] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2NDEzNTIsImlhdCI6MTU1OTY0MDQ1Mn0.dlZTcXdZTRNDAED9BUtJEgysC0iiOM6fCrRizyNBZEw
+[2019-06-04T17:33:59.620] [INFO] default - app.all >> token result:   { uid: '5cdd4676c206cf27f029e599', username: 'Atao' }
+[2019-06-04T17:33:59.644] [INFO] default - [::1 POST /api/account/userMonthAccount 200 40ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]
+[2019-06-04T17:33:59.655] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVjZGQ0Njc2YzIwNmNmMjdmMDI5ZTU5OSIsInVzZXJuYW1lIjoiQXRhbyJ9LCJleHAiOjE1NTk2NDEzNTIsImlhdCI6MTU1OTY0MDQ1Mn0.dlZTcXdZTRNDAED9BUtJEgysC0iiOM6fCrRizyNBZEw
+[2019-06-04T17:33:59.658] [INFO] default - app.all >> token result:   { uid: '5cdd4676c206cf27f029e599', username: 'Atao' }
+[2019-06-04T17:33:59.676] [INFO] default - [::1 POST /api/account/recordList 200 21ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1]

@@ -69,7 +69,6 @@
         var me = this;
         var username = me.form.username;
         var password = me.form.password;
-        console.log(1111111111111);
         if (!username) {
           me.$toast('请输入账号');
         } else if (!password) {
@@ -81,7 +80,8 @@
               password
             }).then(({data}) => {
               if (data.state === 1) {
-                Storages.cookie.set('uid', data.id);
+                Storages.cookie.set('uid', data.uid);
+                Storages.cookie.set('token', data.token);
                 setTimeout(() => {
                   me.$router.push({ name: 'index' });
                 }, 100);

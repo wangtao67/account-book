@@ -56,4 +56,12 @@ export const routes = [
     },
     component: resolve => require(['../pages/login/index'], resolve)     
   },
+  {
+    path:'/test', 
+    name: 'test',
+    meta: { 
+      title: "测试" ,
+    },
+    component: resolve => require(['../pages/test/index'], resolve)     
+  },
 ]
