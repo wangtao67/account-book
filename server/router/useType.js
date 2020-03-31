@@ -15,7 +15,7 @@ router.get("/expCostTypes", (req, res) => {
     res.json({
       state: 4,
       msg: '缺少uid',
-      list: data
+      list: []
     });
   }
   Model.ExpenseCostTypes.find(

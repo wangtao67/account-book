@@ -1,3 +1,12 @@
+const Model = require("../models");
+const JwtUtil = require('../utils/jwt');
+const log4js = require('../log/logConfig');
+const logger = log4js.getLogger() //根据需要获取logger
+const errlogger = log4js.getLogger('err')
+
+/**
+ * 登录
+ */
 exports.login = function (req, res) {
 	var username = req.body.username;
 	var password = req.body.password;
@@ -13,46 +22,54 @@ exports.login = function (req, res) {
 			msg: '请输入password',
 		});
 	}
-	Model.User.find({
-		username
-	}, (err, data) => {
-		if (err) {
-			res.json({
-				state: 0,
-				err: err
-			});
-		} else {
-			if (data.length > 0) {
-				if (data[0].password === password) {
-					let uid = data[0]._id;
-					let jwt = new JwtUtil();
-					let token = jwt.generateToken({
-						uid,
-						username
-					});
-					logger.info('"/login" >> 登录成功, token: ', token);
-					res.json({
-						state: 1,
-						msg: '登录成功！',
-						user: username,
-						uid: uid,
-						token: token
-					});
+	try {
+		Model.User.find({
+			username
+		}, (err, data) => {
+			if (err) {
+				res.json({
+					state: 0,
+					err: err
+				});
+			} else {
+				if (data.length > 0) {
+					if (data[0].password === password) {
+						let uid = data[0]._id;
+						let jwt = new JwtUtil();
+						let token = jwt.generateToken({
+							uid,
+							username
+						});
+						logger.info('"/login" >> 登录成功, token: ', token);
+						res.json({
+							state: 1,
+							msg: '登录成功！',
+							user: username,
+							uid: uid,
+							token: token
+						});
+					} else {
+						res.json({
+							state: 3,
+							msg: '密码错误！',
+						});
+					}
 				} else {
 					res.json({
-						state: 3,
-						msg: '密码错误！',
+						state: 2,
+						msg: '用户名不存在',
 					});
 				}
-			} else {
-				res.json({
-					state: 2,
-					msg: '用户名不存在',
-				});
-			}
 
-		}
-	});
+			}
+		});
+	} catch(err) {
+		errlogger('user.login --> 查询失败！', err);
+		res.json({
+			state: 0,
+			err: err
+		});
+	}
 }
 
 exports.register = function (req, res) {

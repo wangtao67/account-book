@@ -9,6 +9,8 @@ const log4js = require('./log/logConfig');
 const logger = log4js.getLogger();
 const dbCfg = require('./config/dbCfg');
 const JwtUtil = require('./utils/jwt');
+const appCfg = require('./config');
+
 
 const app = express();
 
@@ -40,7 +42,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 let jwt2 = new JwtUtil();
 let result;
-const tokenWhiteList = ['/api/user/login'];
+const tokenWhiteList = ['/api/user/login', '/api/user/register'];
 app.all('*', function(req, res, next) {
     // 设置跨域访问
     res.header("Access-Control-Allow-Origin", "*");
@@ -84,6 +86,6 @@ app.all('*', function(req, res, next) {
 
 router(app);
 
-app.listen(3000, () => {
-    console.log('app listening on port 3000.')
+app.listen(appCfg.port, () => {
+    console.log(`app listening on port ${appCfg.port}.`)
 });
