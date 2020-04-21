@@ -54,7 +54,7 @@
           <div class="form-row">
             <label>金额</label>
             <div class="input-wrap">
-              <input class="input" type="text" v-model="addRecord.amount" placeholder="输入金额">
+              <input class="input" type="text" v-model="addRecord.amount" ref="amountInput" placeholder="输入金额">
             </div>
           </div>
           <div class="form-row">
@@ -135,7 +135,11 @@ export default {
     selectType (item) {
       this.addRecord.useTypeId = item._id;
       this.addRecord.useTypeName = item.name;
+      this.addRecord.date = this.Utils.getFormatTime('now');
       this.showAddRecordMd = true;
+      setTimeout(() => {
+        this.$refs.amountInput.focus();
+      }, 0)
     },
     /**
      * 添加类型
@@ -193,7 +197,7 @@ export default {
     },
     dateChange (value) {
       console.log(value);
-      this.addRecord.date = this.Util.formatDate(value);
+      this.addRecord.date = this.Utils.formatDate(value);
     }
     
   } 

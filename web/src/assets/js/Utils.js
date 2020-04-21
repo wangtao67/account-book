@@ -17,22 +17,22 @@ export default {
     return JSON.parse(JSON.stringify(o));
   },
   GetCookie(name) {
-    let cookieStr
-    let start
-    let end
+    let cookieStr;
+    let start;
+    let end;
     if(!document || !document.cookie) {
       return null;
     } else {
       var xx;
-      cookieStr = document.cookie
-      start = cookieStr.indexOf(name + "=")
-      end = cookieStr.indexOf(";", start)
+      cookieStr = document.cookie;
+      start = cookieStr.indexOf(name + "=");
+      end = cookieStr.indexOf(";", start);
       
-      if(start <= -1) { return null }
+      if(start <= -1) { return null; }
       if(end <= -1) {
-        xx= cookieStr.substring(start)
+        xx = cookieStr.substring(start);
       } else {
-        xx= cookieStr.substring(start, end - 1)
+        xx = cookieStr.substring(start, end - 1);
       }
 
       if (xx){
@@ -52,39 +52,39 @@ export default {
    * @return {string}       修改后的url
    */
   changeUrlArg(url, arg, val,title ) {
-      var pattern = arg+'=([^&]*)';
-      var replaceText = arg+'='+val;
-      var changeUrl = url.match(pattern) ? url.replace(eval('/('+ arg+'=)([^&]*)/gi'), replaceText) : (url.match('[\?]') ? url+'&'+replaceText : url+'?'+replaceText);
+      var pattern = arg + '=([^&]*)';
+      var replaceText = arg + '=' + val;
+      var changeUrl = url.match(pattern) ? url.replace(eval('/(' + arg + '=)([^&]*)/gi'), replaceText) : (url.match('[\?]') ? url + '&' + replaceText : url + '?' + replaceText);
       history.replaceState(null,title,changeUrl);
-      return changeUrl
+      return changeUrl;
   },
   getLocation(){
-    let location = window.location.href
-    return encodeURIComponent(location.substring(location.indexOf("#!")))
+    let location = window.location.href;
+    return encodeURIComponent(location.substring(location.indexOf("#!")));
   },
   //验证手机号码
   testPhone(val){
      var reg = /^1[34578]\d{9}$/;   // 验证手机号
-     return reg.test(val)
+     return reg.test(val);
   },
   //验证6到18位字符
   limitPassword(val,maxlength,minlength){
      var reg = /\w/;   
-     if(val!=''&&maxlength!=null&&minlength!=null){
-      var test=(reg.test(val))&&(val.length>=minlength)&&(val.length<=maxlength)
-      return test
+     if(val != '' && maxlength != null && minlength != null){
+      var test = (reg.test(val)) && (val.length >= minlength) && (val.length <= maxlength);
+      return test;
      }else{
-      return false
+      return false;
      }
   },
   //验证6位支付密码
   limitSixNumber(val){
      var reg = /\d/;   
-     if(val!=''){
-      var test=(reg.test(val))&&(val.length==6)
-      return test
+     if(val != ''){
+      var test = (reg.test(val)) && (val.length == 6);
+      return test;
      }else{
-      return false
+      return false;
      }
      
   },
@@ -110,9 +110,9 @@ export default {
    */
   removeClass(obj, cls){
     if(obj){
-      var obj_class = ' '+obj.className+' ',
+      var obj_class = ' ' + obj.className + ' ',
       obj_class = obj_class.replace(/(\s+)/gi, ' '),
-      removed = obj_class.replace(' '+cls+' ', ' '); 
+      removed = obj_class.replace(' ' + cls + ' ', ' '); 
       removed = removed.replace(/(^\s+)|(\s+$)/g, '');
       obj.className = removed;    
     }
@@ -133,14 +133,14 @@ export default {
           oH = touches.clientY - obj.offsetTop;
           //阻止页面的滑动默认事件
           document.addEventListener("touchmove",defaultEvent,false);
-      },false)
+      },false);
 
       obj.addEventListener("touchmove", function(e) {
           var touches = e.touches[0];
           var oLeft = touches.clientX - oW;
           var oTop = touches.clientY - oH;
-          var docWid = document.documentElement.clientWidth
-          var docHei = document.documentElement.clientHeight 
+          var docWid = document.documentElement.clientWidth;
+          var docHei = document.documentElement.clientHeight; 
           // 检测边界
           if(oLeft < 0) {
               oLeft = 0;
@@ -243,7 +243,7 @@ export default {
       var body = document.getElementsByTagName('body')[0];
       document.title = title;
       var iframe = document.createElement("iframe");
-      iframe.style.display="none";
+      iframe.style.display = "none";
       iframe.setAttribute("src", "http://named.cn/page/take/img/icon_phone.png");
       var d = function() {
           setTimeout(function() {
@@ -254,7 +254,6 @@ export default {
       iframe.addEventListener('load', d);
       document.body.appendChild(iframe);  
   } ,
-
  
   /**
  * 获取滚动条位置
@@ -290,5 +289,37 @@ export default {
     var d = date.getDate();  
     d = d < 10 ? ('0' + d) : d;  
     return y + '-' + m + '-' + d;  
+  },
+  /**
+   * 由时间戳获取格式化时间（主要用于获取特定格式）
+   * @param {string} fmt "yyyy-MM-dd HH:mm:ss.S"
+   */
+  getFormatTime(stamp, fmt) {
+    var date = null;
+    fmt = fmt || 'yyyy-MM-dd';
+    if (!stamp) {
+      return '';
+    } else if (stamp === 'now') {
+      // 获取当前时间
+      date = new Date();
+    } else {
+      date = new Date(Number(stamp));
+    }
+    var o = {
+      'M+': date.getMonth() + 1, // 月份
+      'd+': date.getDate(), // 日
+      'H+': date.getHours(), // 小时
+      'm+': date.getMinutes(), // 分
+      's+': date.getSeconds(), // 秒
+      'q+': Math.floor((date.getMonth() + 3) / 3), // 季度
+      'S': date.getMilliseconds() // 毫秒
+    };
+    if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (date.getFullYear() + '').substr(4 - RegExp.$1.length));
+    for (var k in o) {
+      if (new RegExp('(' + k + ')').test(fmt)) {
+        fmt = fmt.replace(RegExp.$1, (RegExp.$1.length === 1) ? (o[k]) : (('00' + o[k]).substr(('' + o[k]).length)));
+      }
+    }
+    return fmt;
   }
-}
+};

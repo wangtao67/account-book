@@ -44,6 +44,10 @@
       this.pageType = this.$route.query.type || '1';
       this.btnText = this.pageType === '1' ? '登录' : '注册';
 
+      if (this.pageType === '1') {
+        this.username = this.$route.query.uname || '';
+      }
+
       Storages.cookie.set('uid', '');
     },
     computed: {
@@ -96,7 +100,7 @@
             }).then(({data}) => {
               if (data.state === 1) {
                 me.$toast('注册成功！');
-                me.$router.push({ name: 'login' });
+                me.$router.push({ name: 'login', query: { uname: username }} );
               } else  {
                 me.$toast(data.msg);
               }

@@ -11,7 +11,6 @@ const dbCfg = require('./config/dbCfg');
 const JwtUtil = require('./utils/jwt');
 const appCfg = require('./config');
 
-
 const app = express();
 
 // 连接数据库
@@ -42,26 +41,18 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 let jwt2 = new JwtUtil();
 let result;
-const tokenWhiteList = ['/api/user/login', '/api/user/register'];
+const tokenWhiteList = ['/api/user/login', '/api/user/register', '/api/user/deleteUser'];
 app.all('*', function(req, res, next) {
     // 设置跨域访问
     res.header("Access-Control-Allow-Origin", "*");
     res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');
     res.header("Access-Control-Allow-Headers", "x-requested-with, token, Content-Type, ");
-    // if (req.method == "OPTIONS") res.sendStatus(200);/*让options请求快速返回*/
-    // if (req.method !== 'OPTIONS') {
-    //     var infoArr = [
-    //         'method: ' + req.method, 
-    //         'url: ' + req.url, 
-    //         'params: ' + JSON.stringify(req.body),
-    //         'referer: ' + req.headers.referer,
-    //     ];
-    //     logger.info('request >> ', infoArr.join(' '));
-    // } 
+   
     if (req.method === 'OPTIONS') {
         res.sendStatus(200);
         return;
     }
+    console.log(req.url);
     if (tokenWhiteList.includes(req.url)) {
         next();
     } else {

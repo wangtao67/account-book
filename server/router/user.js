@@ -4,14 +4,17 @@ const express = require("express");
 //定义路由级中间件
 const router = express.Router();
 
-const userCtrler = require("../controllers/user");
+const User = require("../controllers/user");
 
 
-router.post("/login", userCtrler.login);
+router.post("/login", User.login);
 
-router.post("/register", userCtrler.register);
+router.post("/register", User.register);
 
-router.post("/getUserInfo", userCtrler.getUserInfo);
+router.post("/getUserInfo", User.getUserInfo);
+
+router.post("/deleteUser", User.deleteUser);
+
 
 module.exports = router;
 

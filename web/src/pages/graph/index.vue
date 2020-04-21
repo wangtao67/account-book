@@ -98,8 +98,13 @@
         this.showMonthSelect = true; 
         console.log(this.showMonthSelect); 
       },
+      /**
+       * 切换类型
+       */
       checkTab (type) {
         this.payType = type;
+        this.getUserMonthTypeAccountFn (this.selectMonth, type);
+
       },
       chooseMonthCb (val) {
         var me = this;
@@ -107,8 +112,9 @@
         me.setNowMonth(val);
         console.log(val);
         console.log(me.fomerMonthStr);
+
         me.getMonthAccount(me.formatMonth(val));
-        me.getUserMonthTypeAccountFn (me.formatMonth(val));
+        me.getUserMonthTypeAccountFn (me.formatMonth(val), 2);
       },
       /**
        * 月份组件渲染年月信息后
@@ -158,11 +164,12 @@
           }
         });   
       },
-      getUserMonthTypeAccountFn (searchMonth) {
+      getUserMonthTypeAccountFn (searchMonth, type) {
         let me = this;
         getUserMonthTypeAccount({
           uid: Storages.cookie.get('uid'),
-          month: searchMonth
+          month: searchMonth,
+          type: type // 1 - income, 2 - cost
         }).then(({data}) => {
           console.log(data);
           if (data.state === 1) {

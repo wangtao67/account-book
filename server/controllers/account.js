@@ -19,11 +19,6 @@ const handError = function (err, res) {
  */
 exports.recordList = function (req, res) {
 	var uid = req.uid;
-	// logger.info('查询所有记录', req.url);
-	// logger.info('查询所有记录 token uid', req.uid);
-	// errlogger.error('出错了, 没有姓名', req.query);
-	// othlogger.info('其他日志信息');
-
 	var searchMonth = req.body.searchMonth || '';
 	if (!uid) {
 		res.json({
@@ -188,7 +183,7 @@ exports.userMonthTypeAccount = function (req, res) {
  */
 exports.addRecord = function (req, res) {
   var params = req.body;
-  if (!params.uid) {
+  if (!req.uid) {
     res.json({
       state: 2,
       msg: '缺少uid',
@@ -199,7 +194,7 @@ exports.addRecord = function (req, res) {
   } 
 
   var recordObj = {
-    uid: params.uid, // 用户id
+    uid: req.uid, // 用户id
 		date: params.date, // 格式：2018-02-23
 	  amount: params.amount,
 	  useTypeId: params.useTypeId, // 消费（收入）类型id
@@ -222,7 +217,7 @@ exports.addRecord = function (req, res) {
         signedAmount = -params.amount;
       }
       // 操作个人账户
-      Model.UserAccount.update({ uid: params.uid }, { $inc: {totalIncome: income, totalCost: cost, totalBalance: signedAmount }}, {}, function (err, doc) {
+      Model.UserAccount.update({ uid: req.uid }, { $inc: {totalIncome: income, totalCost: cost, totalBalance: signedAmount }}, {}, function (err, doc) {
         if (err) {
           handError(err, res);
         } else {

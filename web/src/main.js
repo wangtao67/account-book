@@ -29,7 +29,7 @@ window.http = Vue.http;
 window.Storages = Storages;
 
 // 全局工具函数 页面通过 this.Util.函数名 使用
-Vue.prototype.Util = Utils;
+Vue.prototype.Utils = Utils;
 
 // 全局注册过滤器
 Object.keys(filters).forEach(key => {

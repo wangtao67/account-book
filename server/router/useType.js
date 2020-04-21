@@ -9,8 +9,8 @@ const Model = require("../models");
 // 查询消费类型
 router.get("/expCostTypes", (req, res) => {
   console.log('请求/recordList');
-  console.log(req.query.uid);
-  let uid = req.query.uid;
+  console.log(req.uid);
+  let uid = req.uid;
   if (!uid) {
     res.json({
       state: 4,

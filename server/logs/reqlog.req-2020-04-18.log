@@ -1,0 +1,91 @@
+[2020-04-18T13:56:22.120] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 168ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T13:56:22.130] [INFO] default - [::1 OPTIONS /api/account/recordList 200 1ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T13:56:22.937] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVlOTdjNjdjZWJiZTYzNGQ4YzdmOThmYiIsInVzZXJuYW1lIjoid2FuZyJ9LCJleHAiOjE1ODcwMDU5ODEsImlhdCI6MTU4NzAwNTA4MX0.Pwti6AKsmO0KM50HPf1aRrAyISJ82lZV3V2o74sE0WI
+[2020-04-18T13:56:22.940] [INFO] default - app.all >> token result:   expired
+[2020-04-18T13:56:22.943] [INFO] default - [::1 POST /api/account/userMonthAccount 200 810ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T13:56:22.945] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVlOTdjNjdjZWJiZTYzNGQ4YzdmOThmYiIsInVzZXJuYW1lIjoid2FuZyJ9LCJleHAiOjE1ODcwMDU5ODEsImlhdCI6MTU4NzAwNTA4MX0.Pwti6AKsmO0KM50HPf1aRrAyISJ82lZV3V2o74sE0WI
+[2020-04-18T13:56:22.947] [INFO] default - app.all >> token result:   expired
+[2020-04-18T13:56:22.949] [INFO] default - [::1 POST /api/account/recordList 200 4ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T13:56:34.556] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 1ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T13:56:34.564] [INFO] default - [::1 OPTIONS /api/account/recordList 200 1ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T13:56:34.572] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVlOTdjNjdjZWJiZTYzNGQ4YzdmOThmYiIsInVzZXJuYW1lIjoid2FuZyJ9LCJleHAiOjE1ODcwMDU5ODEsImlhdCI6MTU4NzAwNTA4MX0.Pwti6AKsmO0KM50HPf1aRrAyISJ82lZV3V2o74sE0WI
+[2020-04-18T13:56:34.575] [INFO] default - app.all >> token result:   expired
+[2020-04-18T13:56:34.577] [INFO] default - [::1 POST /api/account/userMonthAccount 200 5ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T13:56:34.580] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVlOTdjNjdjZWJiZTYzNGQ4YzdmOThmYiIsInVzZXJuYW1lIjoid2FuZyJ9LCJleHAiOjE1ODcwMDU5ODEsImlhdCI6MTU4NzAwNTA4MX0.Pwti6AKsmO0KM50HPf1aRrAyISJ82lZV3V2o74sE0WI
+[2020-04-18T13:56:34.581] [INFO] default - app.all >> token result:   expired
+[2020-04-18T13:56:34.583] [INFO] default - [::1 POST /api/account/recordList 200 4ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T13:56:58.668] [INFO] default - [::1 OPTIONS /api/user/login 200 1ms][http://localhost:8085/ HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T13:57:06.183] [INFO] default - [::1 OPTIONS /api/user/login 200 1ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T13:57:06.246] [INFO] default - [::1 POST /api/user/login 200 34ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T14:07:32.384] [INFO] default - [::1 OPTIONS /api/user/login 200 8ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T14:07:32.437] [INFO] default - [::1 POST /api/user/login 200 47ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T14:09:13.398] [INFO] default - [::1 OPTIONS /api/user/register 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T14:09:13.648] [INFO] default - [::1 POST /api/user/register 200 240ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T14:09:18.942] [INFO] default - [::1 OPTIONS /api/user/login 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T14:09:19.032] [INFO] default - "/login" >> 登录成功, token:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVlOWE5OTg5NmRmZTk1NDFkOGEyYjNjMSIsInVzZXJuYW1lIjoid2FuZyJ9LCJleHAiOjE1ODcxOTEwNTksImlhdCI6MTU4NzE5MDE1OX0.BrIZRbAfuT4F1AFZ0VW6Cb4jOsH55sgaMQU-oBbshpc
+[2020-04-18T14:09:19.034] [INFO] default - [::1 POST /api/user/login 200 35ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T14:09:19.228] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 1ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T14:09:19.233] [INFO] default - [::1 OPTIONS /api/account/recordList 200 1ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T14:09:19.240] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVlOWE5OTg5NmRmZTk1NDFkOGEyYjNjMSIsInVzZXJuYW1lIjoid2FuZyJ9LCJleHAiOjE1ODcxOTEwNTksImlhdCI6MTU4NzE5MDE1OX0.BrIZRbAfuT4F1AFZ0VW6Cb4jOsH55sgaMQU-oBbshpc
+[2020-04-18T14:09:19.244] [INFO] default - app.all >> token result:   { uid: '5e9a99896dfe9541d8a2b3c1', username: 'wang' }
+[2020-04-18T14:09:19.267] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVlOWE5OTg5NmRmZTk1NDFkOGEyYjNjMSIsInVzZXJuYW1lIjoid2FuZyJ9LCJleHAiOjE1ODcxOTEwNTksImlhdCI6MTU4NzE5MDE1OX0.BrIZRbAfuT4F1AFZ0VW6Cb4jOsH55sgaMQU-oBbshpc
+[2020-04-18T14:09:19.269] [INFO] default - app.all >> token result:   { uid: '5e9a99896dfe9541d8a2b3c1', username: 'wang' }
+[2020-04-18T14:09:19.296] [INFO] default - [::1 POST /api/account/userMonthAccount 200 57ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T14:09:19.299] [INFO] default - [::1 POST /api/account/recordList 200 32ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T14:09:21.124] [INFO] default - [::1 OPTIONS /api/useType/expCostTypes 200 1ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T14:09:21.184] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVlOWE5OTg5NmRmZTk1NDFkOGEyYjNjMSIsInVzZXJuYW1lIjoid2FuZyJ9LCJleHAiOjE1ODcxOTEwNTksImlhdCI6MTU4NzE5MDE1OX0.BrIZRbAfuT4F1AFZ0VW6Cb4jOsH55sgaMQU-oBbshpc
+[2020-04-18T14:09:21.191] [INFO] default - app.all >> token result:   { uid: '5e9a99896dfe9541d8a2b3c1', username: 'wang' }
+[2020-04-18T14:09:21.257] [INFO] default - [::1 GET /api/useType/expCostTypes 200 74ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T14:09:31.995] [INFO] default - [::1 OPTIONS /api/account/addRecord 200 1ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T14:09:32.006] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVlOWE5OTg5NmRmZTk1NDFkOGEyYjNjMSIsInVzZXJuYW1lIjoid2FuZyJ9LCJleHAiOjE1ODcxOTEwNTksImlhdCI6MTU4NzE5MDE1OX0.BrIZRbAfuT4F1AFZ0VW6Cb4jOsH55sgaMQU-oBbshpc
+[2020-04-18T14:09:32.027] [INFO] default - app.all >> token result:   { uid: '5e9a99896dfe9541d8a2b3c1', username: 'wang' }
+[2020-04-18T14:09:32.123] [INFO] default - [::1 POST /api/account/addRecord 200 118ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T14:09:33.986] [INFO] default - [::1 OPTIONS /api/account/userMonthAccount 200 1ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T14:09:34.025] [INFO] default - [::1 OPTIONS /api/account/recordList 200 2ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T14:09:34.031] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVlOWE5OTg5NmRmZTk1NDFkOGEyYjNjMSIsInVzZXJuYW1lIjoid2FuZyJ9LCJleHAiOjE1ODcxOTEwNTksImlhdCI6MTU4NzE5MDE1OX0.BrIZRbAfuT4F1AFZ0VW6Cb4jOsH55sgaMQU-oBbshpc
+[2020-04-18T14:09:34.033] [INFO] default - app.all >> token result:   { uid: '5e9a99896dfe9541d8a2b3c1', username: 'wang' }
+[2020-04-18T14:09:34.036] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVlOWE5OTg5NmRmZTk1NDFkOGEyYjNjMSIsInVzZXJuYW1lIjoid2FuZyJ9LCJleHAiOjE1ODcxOTEwNTksImlhdCI6MTU4NzE5MDE1OX0.BrIZRbAfuT4F1AFZ0VW6Cb4jOsH55sgaMQU-oBbshpc
+[2020-04-18T14:09:34.049] [INFO] default - app.all >> token result:   { uid: '5e9a99896dfe9541d8a2b3c1', username: 'wang' }
+[2020-04-18T14:09:34.061] [INFO] default - [::1 POST /api/account/userMonthAccount 200 31ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T14:09:34.079] [INFO] default - [::1 POST /api/account/recordList 200 43ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T15:30:58.348] [INFO] default - [::1 OPTIONS /api/user/getUserInfo 200 349ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T15:30:58.691] [INFO] default - app.all >> get token:   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7InVpZCI6IjVlOWE5OTg5NmRmZTk1NDFkOGEyYjNjMSIsInVzZXJuYW1lIjoid2FuZyJ9LCJleHAiOjE1ODcxOTEwNTksImlhdCI6MTU4NzE5MDE1OX0.BrIZRbAfuT4F1AFZ0VW6Cb4jOsH55sgaMQU-oBbshpc
+[2020-04-18T15:30:58.812] [INFO] default - app.all >> token result:   expired
+[2020-04-18T15:30:58.868] [INFO] default - [::1 POST /api/user/getUserInfo 200 282ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T15:32:11.513] [INFO] default - [::1 OPTIONS /api/user/login 200 41ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T15:32:11.807] [INFO] default - [::1 POST /api/user/login 200 260ms][http://localhost:8085/? HTTP/1.1 Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1]
+[2020-04-18T15:32:51.425] [INFO] default - app.all >> get token:   
+[2020-04-18T15:32:51.426] [INFO] default - app.all >> token result:   err
+[2020-04-18T15:32:51.437] [INFO] default - [::1 POST /api/user/login?password=ww&username=34 200 23ms][ HTTP/1.1 PostmanRuntime/7.24.1]
+[2020-04-18T15:35:19.417] [INFO] default - app.all >> get token:   
+[2020-04-18T15:35:19.419] [INFO] default - app.all >> token result:   err
+[2020-04-18T15:35:19.426] [INFO] default - [::1 POST /api/user/login?password=ww&username=34 200 12ms][ HTTP/1.1 PostmanRuntime/7.24.1]
+[2020-04-18T15:37:26.381] [INFO] default - [::1 POST /api/user/login 200 107ms][ HTTP/1.1 PostmanRuntime/7.24.1]
+[2020-04-18T15:39:07.433] [INFO] default - [::1 POST /api/user/login 200 82ms][ HTTP/1.1 PostmanRuntime/7.24.1]
+[2020-04-18T16:57:32.358] [INFO] default - [::1 POST /api/user/register 500 27ms][ HTTP/1.1 PostmanRuntime/7.24.1]
+[2020-04-18T17:00:08.371] [INFO] default - [::1 POST /api/user/register 200 79ms][ HTTP/1.1 PostmanRuntime/7.24.1]
+[2020-04-18T17:00:15.263] [INFO] default - [::1 POST /api/user/register 200 40ms][ HTTP/1.1 PostmanRuntime/7.24.1]
+[2020-04-18T17:00:20.667] [INFO] default - [::1 POST /api/user/register 200 88ms][ HTTP/1.1 PostmanRuntime/7.24.1]
+[2020-04-18T17:06:05.133] [INFO] default - [::1 POST /api/user/register 200 59ms][ HTTP/1.1 PostmanRuntime/7.24.1]
+[2020-04-18T17:06:31.713] [INFO] default - [::1 POST /api/user/register 200 46ms][ HTTP/1.1 PostmanRuntime/7.24.1]
+[2020-04-18T17:07:14.403] [INFO] default - [::1 POST /api/user/register 200 79ms][ HTTP/1.1 PostmanRuntime/7.24.1]
+[2020-04-18T17:07:33.174] [INFO] default - [::1 POST /api/user/register 200 66ms][ HTTP/1.1 PostmanRuntime/7.24.1]
+[2020-04-18T17:09:18.512] [INFO] default - [::1 POST /api/user/register 200 73ms][ HTTP/1.1 PostmanRuntime/7.24.1]
+[2020-04-18T17:09:23.585] [INFO] default - /register >> Error:  me.makeUserAccount is not a function
+[2020-04-18T17:09:23.588] [INFO] default - [::1 POST /api/user/register 200 59ms][ HTTP/1.1 PostmanRuntime/7.24.1]
+[2020-04-18T17:22:12.597] [INFO] default - [::1 POST /api/user/register 200 73ms][ HTTP/1.1 PostmanRuntime/7.24.1]
+[2020-04-18T17:23:42.529] [INFO] default - /register >> Error:  Cannot read property '_id' of undefined
+[2020-04-18T17:23:42.536] [INFO] default - [::1 POST /api/user/register 200 113ms][ HTTP/1.1 PostmanRuntime/7.24.1]
+[2020-04-18T17:24:47.719] [INFO] default - /register >> Error:  Cannot read property '_id' of undefined
+[2020-04-18T17:24:47.727] [INFO] default - [::1 POST /api/user/register 200 101ms][ HTTP/1.1 PostmanRuntime/7.24.1]
+[2020-04-18T17:25:57.785] [INFO] default - /register >> Error:  Cannot read property '_id' of undefined
+[2020-04-18T17:25:57.793] [INFO] default - [::1 POST /api/user/register 200 87ms][ HTTP/1.1 PostmanRuntime/7.24.1]
+[2020-04-18T17:26:52.160] [INFO] default - [::1 POST /api/user/register 200 123ms][ HTTP/1.1 PostmanRuntime/7.24.1]
+[2020-04-18T18:03:17.205] [INFO] default - [::1 POST /api/user/deleteUser 200 137ms][ HTTP/1.1 PostmanRuntime/7.24.1]
+[2020-04-18T18:03:37.612] [INFO] default - [::1 POST /api/user/deleteUser 200 28ms][ HTTP/1.1 PostmanRuntime/7.24.1]
+[2020-04-18T18:04:45.327] [INFO] default - [::1 POST /api/user/deleteUser 200 61ms][ HTTP/1.1 PostmanRuntime/7.24.1]
+[2020-04-18T18:06:22.418] [INFO] default - [::1 POST /api/user/deleteUser 200 60ms][ HTTP/1.1 PostmanRuntime/7.24.1]
+[2020-04-18T18:07:23.712] [INFO] default - [::1 POST /api/user/deleteUser 200 63ms][ HTTP/1.1 PostmanRuntime/7.24.1]
+[2020-04-18T18:07:55.063] [INFO] default - [::1 POST /api/user/deleteUser 200 71ms][ HTTP/1.1 PostmanRuntime/7.24.1]
+[2020-04-18T18:08:35.119] [INFO] default - [::1 POST /api/user/deleteUser 200 67ms][ HTTP/1.1 PostmanRuntime/7.24.1]
+[2020-04-18T18:08:48.169] [INFO] default - [::1 POST /api/user/deleteUser 200 48ms][ HTTP/1.1 PostmanRuntime/7.24.1]
